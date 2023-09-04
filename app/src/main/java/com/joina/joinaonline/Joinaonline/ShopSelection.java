@@ -189,7 +189,7 @@ public class ShopSelection extends AppCompatActivity {
             card_view4.setVisibility(View.GONE);
 
 
-        } else if (title.toLowerCase().equals("events & bookings")) {
+        } else if (title.toLowerCase().equals("Events & Bookings")) {
             category_image1.setImageResource(R.drawable.light_logo);
             category_image2.setImageResource(R.drawable.light_logo);
 
@@ -199,7 +199,7 @@ public class ShopSelection extends AppCompatActivity {
             card_view3.setVisibility(View.GONE);
             card_view4.setVisibility(View.GONE);
 
-        } else if (title.toLowerCase().equals("online auction".toLowerCase())) {
+        } else if (title.toLowerCase().equals("Online Auction".toLowerCase())) {
             category_image1.setImageResource(R.drawable.light_logo);
 
             category_title1.setText("LGot Good Auction");
