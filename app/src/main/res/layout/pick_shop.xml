@@ -13,6 +13,8 @@
         android:layout_height="wrap_content"
         android:background="@drawable/grad_background"
         app:title="Market Place" />
+
+
     <View
         android:id="@id/view"
         android:layout_width="match_parent"

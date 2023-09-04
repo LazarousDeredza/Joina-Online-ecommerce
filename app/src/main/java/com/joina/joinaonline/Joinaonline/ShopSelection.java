@@ -169,7 +169,7 @@ public class ShopSelection extends AppCompatActivity {
             card_view3.setVisibility(View.GONE);
             card_view4.setVisibility(View.GONE);
 
-        } else if (title.toLowerCase().equals("groceries".toLowerCase())) {
+        } else if (title.toLowerCase().equals("Groceries".toLowerCase())) {
             category_image1.setImageResource(R.drawable.pick_and_pay);
 
             category_title1.setText("Pick n Pay");
