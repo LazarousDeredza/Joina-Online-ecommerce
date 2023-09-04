@@ -85,8 +85,22 @@ public class ConfirmFragment extends Fragment {
         }
 
 
+        //get boolean delivery from bundle
+        //if delivery is true, then shipping is 5.00
+        //else shipping is 0.00
+
+     Boolean delivery=localStorage.getDelivery();
+
+        if(delivery) {
+           //5 % of total
+            _shipping = 0.05 * ((BaseActivity) getActivity()).getTotalPrice();
+        }else {
+            _shipping = 0.00;
+        }
+
+
         _total = ((BaseActivity) getActivity()).getTotalPrice();
-        _shipping = 0.0;
+
         _totalAmount = _total + _shipping;
         total.setText(_total + "");
         shipping.setText(_shipping + "");

@@ -1,6 +1,7 @@
 package com.joina.joinaonline.Joinaonline.OrderPayments.fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -13,7 +14,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -47,7 +50,11 @@ public class AddressFragment extends Fragment {
     EditText name, email, mobile, address, state, zip;
     UserAddress userAddress;
     LocalStorage localStorage;
+
+    LinearLayout LLaddress;
     Gson gson;
+
+    CheckBox checkBox;
 
     private Spinner spinnerState;
     private Spinner spinnerCountry;
@@ -74,6 +81,9 @@ public class AddressFragment extends Fragment {
         mobile = v.findViewById(R.id.sa_mobile);
         address = v.findViewById(R.id.sa_address);
         zip = v.findViewById(R.id.sa_zip);
+
+        checkBox = v.findViewById(R.id.checkBox);
+        LLaddress = v.findViewById(R.id.address);
 
         localStorage = new LocalStorage(getContext());
         gson = new Gson();
@@ -113,6 +123,19 @@ public class AddressFragment extends Fragment {
         spinnerCountry.setAdapter(countryAdapter);
 
 
+        LLaddress.setVisibility(View.INVISIBLE);
+
+        checkBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (checkBox.isChecked()) {
+                    LLaddress.setVisibility(View.VISIBLE);
+                } else {
+                    LLaddress.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
+
         txt_pyment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -128,44 +151,62 @@ public class AddressFragment extends Fragment {
                 if (_name.length() == 0) {
                     name.setError("Enter Name");
                     name.requestFocus();
+                    return;
                 } else if (_email.length() == 0) {
                     email.setError("Enter email");
                     email.requestFocus();
+                    return;
                 } else if (!m.find()) {
                     email.setError("Enter Correct email");
                     email.requestFocus();
+                    return;
 
                 } else if (_mobile.length() == 0) {
                     mobile.setError("Enter mobile Number");
                     mobile.requestFocus();
+                    return;
                 } else if (_mobile.length() < 10) {
                     mobile.setError("Enter Corretct mobile Number");
                     mobile.requestFocus();
-                } else if (_address.length() == 0) {
-                    address.setError("Enter your Address");
-                    address.requestFocus();
-                } else if (_zip.length() == 0) {
-                    zip.setError("Enter your Zip Code");
-                    zip.requestFocus();
-                } else {
-                    userAddress = new UserAddress(_name, _email, _mobile, _address, _state, _city, _zip);
-                    String user_address = gson.toJson(userAddress);
-                    localStorage.setUserAddress(user_address);
-
-                    FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
-                    ft.setCustomAnimations(R.anim.slide_from_right, R.anim.slide_to_left);
-                    ft.replace(R.id.content_frame, new PaymentFragment());
-                    ft.commit();
+                    return;
                 }
 
 
-            }
-        });
+                if (checkBox.isChecked()) {
+
+                    if (_address.length() == 0) {
+                        address.setError("Enter your Address");
+                        address.requestFocus();
+                        return;
+                    } else if (_zip.length() == 0) {
+                        zip.setError("Enter your Zip Code");
+                        zip.requestFocus();
+                        return;
+                    }
+                }
+
+
+                userAddress = new UserAddress(_name, _email, _mobile, _address, _state, _city, _zip);
+                String user_address = gson.toJson(userAddress);
+                localStorage.setUserAddress(user_address);
+
+
+                //store delivery status in Shared Preferences
+                localStorage.setDelivery(checkBox.isChecked());
+
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.setCustomAnimations(R.anim.slide_from_right, R.anim.slide_to_left);
+                ft.replace(R.id.content_frame, new PaymentFragment());
+                ft.commit();
+
+
+
+        }
+    });
         return v;
 
 
-    }
-
+}
 
 
 //    private void init() {

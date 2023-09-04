@@ -189,7 +189,7 @@ public class ShopSelection extends AppCompatActivity {
             card_view4.setVisibility(View.GONE);
 
 
-        } else if (title.toLowerCase().equals("Events & Bookings")) {
+        } else if (title.toLowerCase().equals("Events & Bookings".toLowerCase())) {
             category_image1.setImageResource(R.drawable.light_logo);
             category_image2.setImageResource(R.drawable.light_logo);
 

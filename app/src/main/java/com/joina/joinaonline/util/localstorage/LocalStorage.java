@@ -79,6 +79,8 @@ public class LocalStorage {
         editor.putString(KEY_USER_ADDRESS, user_address);
         editor.commit();
     }
+
+
     public String getCart() {
         if (sharedPreferences.contains("CART"))
             return sharedPreferences.getString("CART", null);
@@ -116,5 +118,15 @@ public class LocalStorage {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.remove("ORDER");
         editor.commit();
+    }
+
+    public void setDelivery(boolean checked) {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putBoolean("DELIVERY", checked);
+        editor.commit();
+    }
+
+    public Boolean getDelivery() {
+        return sharedPreferences.getBoolean("DELIVERY", false);
     }
 }
