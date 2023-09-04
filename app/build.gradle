@@ -1,0 +1,107 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.joina.joinaonline'
+
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.joina.joinaonline"
+        minSdk 24
+        targetSdk 33
+        versionCode 8
+        versionName "6.0.1"
+
+        ndk.abiFilters 'armeabi-v7a','arm64-v8a','x86_64'
+        ndk {
+            abiFilters 'armeabi-v7a','arm64-v8a','x86_64'
+        }
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }  
+
+    packagingOptions {
+        exclude 'lib/armeabi-v7a/libvudroid.so'
+        exclude 'lib/x86/libvudroid.so'
+        exclude 'lib/arm64-v8a/libvudroid.so'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    implementation 'androidx.navigation:navigation-fragment:2.3.5'
+    implementation 'com.library.tangxiaolv:telegramgallery:1.0.4'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.10'
+    implementation 'org.jetbrains.kotlin:kotlin-reflect:1.4.10'
+
+    implementation 'com.droidninja:filepicker:2.2.5'
+
+//    implementation 'com.github.dhaval2404:imagepicker:2'
+    implementation 'androidx.activity:activity-ktx:1.4.0'
+    implementation 'androidx.fragment:fragment-ktx:1.4.1'
+
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.navigation:navigation-ui:2.3.5'
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+    //implementation 'com.android.support:appcompat-v7:28.0.0'
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9'
+    api 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.squareup.picasso:picasso:2.8'
+
+
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    //implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // api interfaces
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.google.code.gson:gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.5.0'
+    implementation 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0'
+
+    // layouts dimensions
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+    // lifecycle
+    implementation 'android.arch.lifecycle:viewmodel:1.1.1'
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+  
+    // image slide for promotions
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
+//    implementation 'com.github.lloydltc:localregex:0.11'
+
+    //type writter
+    implementation 'com.github.sarnavakonar:TextWriter:v1.0'
+
+}

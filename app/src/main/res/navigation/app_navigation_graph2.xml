@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation_graph2"
+    app:startDestination="@id/JoinaOnlineHomeFragment">
+
+    <fragment
+        android:id="@+id/JoinaOnlineHomeFragment"
+        android:name="com.joina.joinaonline.Joinaonline.fragments.JoinaOnlineHomeFragment"
+        android:label="fragment_jona_home"
+        tools:layout="@layout/fragment_jona_home" >
+        <action
+            android:id="@+id/action_JoinaOnlineHomeFragment_to_smartParkingFragment"
+            app:destination="@id/smartParkingFragment" />
+        <action
+            android:id="@+id/action_JoinaOnlineHomeFragment_to_officesFragment"
+            app:destination="@id/officesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myOrderFragment"
+        android:name="com.joina.joinaonline.fragments.MyOrderFragment"
+        android:label="fragment_my_order"
+        tools:layout="@layout/fragment_my_order" />
+
+<!--    <activity-->
+<!--        android:id="@+id/shoppingCartActivity"-->
+<!--        android:name="com.joina.joinaonline.Joinaonline.OrderPayments.ShoppingCartActivity"-->
+<!--        android:label="activity_shopping_cart"-->
+<!--        tools:layout="@layout/activity_shopping_cart" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/fragmentShoppingCart"-->
+<!--        android:name="com.joina.joinaonline.fragments.fragmentShoppingCart"-->
+<!--        android:label="fragment_shopping_cart"-->
+<!--        tools:layout="@layout/fragment_shopping_cart" />-->
+<!--    -->
+    <fragment
+        android:id="@+id/fragmentSettings"
+        android:name="com.joina.joinaonline.fragments.fragmentSettings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings_joinaonline" />
+    <fragment
+        android:id="@+id/smartParkingFragment"
+        android:name="com.joina.joinaonline.Joinaonline.SmartParking.fragments.SmartParkingFragment"
+        android:label="fragment_smart_parking"
+        tools:layout="@layout/fragment_smart_parking" >
+        <action
+            android:id="@+id/action_smartParkingFragment_to_JoinaOnlineHomeFragment"
+            app:destination="@id/JoinaOnlineHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/officesFragment"
+        android:name="com.joina.joinaonline.Joinaonline.Offices.OfficesFragment"
+        android:label="fragment_offices"
+        tools:layout="@layout/fragment_offices" >
+        <action
+            android:id="@+id/action_officesFragment_to_JoinaOnlineHomeFragment"
+            app:destination="@id/JoinaOnlineHomeFragment" />
+        <action
+            android:id="@+id/action_officesFragment_to_officeUploadDocsFragment"
+            app:destination="@id/officeUploadDocsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/officeUploadDocsFragment"
+        android:name="com.joina.joinaonline.Joinaonline.Offices.OfficeUploadDocsFragment"
+        android:label="fragment_office_upload_docs"
+        tools:layout="@layout/fragment_office_upload_docs" >
+        <action
+            android:id="@+id/action_officeUploadDocsFragment_to_officesFragment"
+            app:destination="@id/officesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/directoryFragment"
+        android:name="com.joina.joinaonline.Joinaonline.directory.DirectoryFragment"
+        android:label="fragment_directory"
+        tools:layout="@layout/fragment_directory" />
+
+
+    <!--    <action-->
+<!--        android:id="@+id/action_JoinaOnlineHomeFragment_to_shoppingCartActivity"-->
+<!--        app:destination="@id/shoppingCartActivity"-->
+<!--        app:launchSingleTop="true"-->
+<!--        />-->
+<!--    <action-->
+<!--        android:id="@+id/action_JoinaOnlineHomeFragment_to_fragmentSettings"-->
+<!--        app:destination="@id/fragmentSettings" />-->
+
+</navigation>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".SmartParking.Admin.Fragments.SPTagManagenentFragment">
+
+<!--        <TextView-->
+<!--            android:id="@+id/txt2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Joina City Smart Parking"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textSize="@dimen/_10sdp" />-->
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttons"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addBilling"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Billing"
+                android:outlineAmbientShadowColor="@color/black"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                app:strokeColor="@color/black"
+                app:rippleColor="@color/primary"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/viewRequested1"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginStart="20dp"
+                android:text="Requested Tags"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                app:strokeColor="@color/black"
+                app:rippleColor="@color/primary"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/viewRequested2"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginStart="20dp"
+                android:text="Assign Tags"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                app:strokeColor="@color/black"
+                app:rippleColor="@color/primary"
+
+                />
+
+        </LinearLayout>
+        </HorizontalScrollView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardContents"
+            app:cardCornerRadius="@dimen/_15sdp"
+            app:cardPreventCornerOverlap="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/buttons"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/grad_background">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttons"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="visible"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>

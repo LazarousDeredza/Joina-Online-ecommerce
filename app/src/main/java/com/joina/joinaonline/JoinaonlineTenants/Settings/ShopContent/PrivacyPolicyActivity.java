@@ -1,0 +1,20 @@
+package com.joina.joinaonline.JoinaonlineTenants.Settings.ShopContent;
+
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+
+import com.github.barteksc.pdfviewer.PDFView;
+import com.joina.joinaonline.R;
+
+public class PrivacyPolicyActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_privacy_policy);
+
+        PDFView pdfView = findViewById(R.id.pdfview);
+        pdfView.fromAsset("privacy_policy.pdf").load();
+    }
+}

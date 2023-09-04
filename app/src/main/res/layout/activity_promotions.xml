@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".JoinaonlineTenants.Settings.Promotions.PromotionsActivity">
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:background="@color/primary"
+    android:elevation="0dp"
+    app:title="Promotions" />
+
+<TextView
+    android:id="@+id/promotions_list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/toolbar"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginStart="@dimen/_20sdp"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:layout_marginEnd="@dimen/_20sdp"
+    android:text="Promotions List"
+    android:textColor="@color/black"
+    android:textSize="@dimen/_14sdp"
+    android:textStyle="bold" />
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/promotionsListRecycler"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginTop="8dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/promotions_list" />
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/addFab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_24sdp"
+    android:layout_marginBottom="@dimen/_24sdp"
+    android:backgroundTint="@color/primary"
+    android:contentDescription="@string/app_name"
+    android:src="@drawable/ic_baseline_add"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+<!--<com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton-->
+<!--    android:id="@+id/addFab1"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginEnd="@dimen/_24sdp"-->
+<!--    android:layout_marginBottom="@dimen/_24sdp"-->
+<!--    android:backgroundTint="@color/primary"-->
+<!--    android:text="Add New  Subcategory"-->
+<!--    android:textAllCaps="false"-->
+<!--    android:visibility="invisible"-->
+<!--    app:icon="@drawable/ic_baseline_add"-->
+<!--    app:layout_constraintBottom_toTopOf="@+id/addFab"-->
+<!--    app:layout_constraintEnd_toEndOf="parent" />-->
+
+<com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+    android:id="@+id/addFab2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_24sdp"
+    android:backgroundTint="@color/primary"
+    android:text="Add Promotion"
+    android:textAllCaps="false"
+    android:visibility="invisible"
+    app:icon="@drawable/ic_baseline_add"
+    app:layout_constraintBottom_toTopOf="@+id/addFab"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

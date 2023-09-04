@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinaonlineTenants.Settings.ShopContent.ShopContentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@color/primary"
+        app:title="Shop Content" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/about_shop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@color/white"
+        android:elevation="0dp"
+        android:text="  About Shop"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        app:icon="@drawable/ic_about"
+        app:iconSize="@dimen/_25sdp"
+        app:iconTint="@color/dark"
+        app:rippleColor="@color/ripple" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/aboutShopRL"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        android:layout_below="@+id/about_shop"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/shop_logo"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@color/dark"
+            android:focusable="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/shop_logo"
+            android:fontFamily="@font/app_font_bold"
+            android:text="Shop Name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/shop_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shop_name"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toRightOf="@id/shop_logo"
+            android:fontFamily="@font/app_font_bold"
+            android:text="Shop floor"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/shop_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shop_logo"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/app_font_bold"
+            android:text="Shop Description"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/shop_description1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shop_description"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/app_font_bold"
+            android:text="Shop Description Shop Description Shop Description Shop Description Shop Description Shop Description Shop Description Shop DescriptionShop Description Shop Description Shop Description Shop Description Shop Description Shop Description Shop Description Shop DescriptionShop Description Shop Description Shop Description Shop Description"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:justificationMode="inter_word"
+             />
+        <TextView
+            android:id="@+id/shop_timings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shop_description1"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/app_font_bold"
+            android:text="Shop Timings"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/timing"
+            android:layout_below="@id/shop_timings"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shop_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/app_font_bold"
+                    android:text="Shop Opens:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                >
+                <TextView
+                    android:id="@+id/shop_open1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/app_font_bold"
+                    android:text="08:00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/_20sdp"
+                >
+
+                <TextView
+                    android:id="@+id/shop_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/app_font_bold"
+                    android:text="Shop Close:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                >
+
+                <TextView
+                    android:id="@+id/shop_close1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/app_font_bold"
+                    android:text="16:00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/privacy_policy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_below="@+id/aboutShopRL"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@color/white"
+        android:elevation="0dp"
+        android:text="  Privacy Policy"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        app:icon="@drawable/icon_policy"
+        app:iconSize="@dimen/_25sdp"
+        app:iconTint="@color/dark"
+        app:rippleColor="@color/ripple" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/terms_and_conditions"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_below="@+id/privacy_policy"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@color/white"
+        android:elevation="0dp"
+        android:text="  Terms and Conditions"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        app:icon="@drawable/ic_conditions"
+        app:iconSize="@dimen/_25sdp"
+        app:iconTint="@color/dark"
+        app:rippleColor="@color/ripple" />
+</RelativeLayout>

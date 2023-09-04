@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_parking_navigation"
+    app:startDestination="@id/parkingFragment">
+
+    <fragment
+        android:id="@+id/parkingFragment"
+        android:name="com.joina.joinaonline.Parking.ParkingFragment"
+        android:label="fragment_parking"
+        tools:layout="@layout/fragment_parking" >
+        <action
+            android:id="@+id/action_parkingFragment_to_requestsFragment"
+            app:destination="@id/requestsFragment" />
+        <action
+            android:id="@+id/action_parkingFragment_to_ratesManagementFragment"
+            app:destination="@id/ratesManagementFragment" />
+        <action
+            android:id="@+id/action_parkingFragment_to_tagManagementFragment"
+            app:destination="@id/tagManagementFragment" />
+        <action
+            android:id="@+id/action_parkingFragment_to_profileManagementFragment"
+            app:destination="@id/profileManagementFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/requestsFragment"
+        android:name="com.joina.joinaonline.Parking.admin.RequestsFragment"
+        android:label="fragment_requests"
+        tools:layout="@layout/fragment_requests" />
+    <fragment
+        android:id="@+id/ratesManagementFragment"
+        android:name="com.joina.joinaonline.Parking.admin.RatesManagementFragment"
+        android:label="fragment_rates_management"
+        tools:layout="@layout/fragment_rates_management" />
+    <fragment
+        android:id="@+id/tagManagementFragment"
+        android:name="com.joina.joinaonline.Parking.admin.TagManagementFragment"
+        android:label="fragment_tag_management"
+        tools:layout="@layout/fragment_tag_management" />
+    <fragment
+        android:id="@+id/profileManagementFragment"
+        android:name="com.joina.joinaonline.Parking.admin.ProfileManagementFragment"
+        android:label="fragment_profile_management"
+        tools:layout="@layout/fragment_profile_management" />
+</navigation>

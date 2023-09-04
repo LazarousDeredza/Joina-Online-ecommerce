@@ -1,0 +1,45 @@
+{
+  "statelist": [
+
+    {
+      "id": 1,
+      "name": "South Africa"
+    },
+    {
+      "id": 2,
+      "name": "Angola"
+    },
+    {
+      "id": 3,
+      "name": "Botswana"
+    },
+    {
+      "id": 4,
+      "name": "Lesotho"
+    },
+    {
+      "id": 5,
+      "name": "Malawi"
+    },
+    {
+      "id": 6,
+      "name": "Mozambique"
+    },
+    {
+      "id": 7,
+      "name": "Namibia"
+    },
+    {
+      "id": 8,
+      "name": "Swaziland"
+    },
+    {
+      "id": 9,
+      "name": "Zambia"
+    },
+    {
+      "id": 10,
+      "name": "Zimbabwe"
+    }
+  ]
+}

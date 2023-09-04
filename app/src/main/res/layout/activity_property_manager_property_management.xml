@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+tools:context=".Tenants.PropertyManager.PropertyManagement.PropertyManagerPropertyManagementActivity">
+
+<RelativeLayout
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_140sdp"
+    android:background="@drawable/ten">
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:fontFamily="@font/app_font"
+        android:shadowColor="@color/black"
+        android:text="Tenants"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_4sdp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:fontFamily="@font/app_font"
+        android:shadowColor="@color/black"
+        android:text="Property Manager Portal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="italic" />
+
+</RelativeLayout>
+
+<androidx.core.widget.NestedScrollView
+    android:id="@+id/middleScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/top"
+   android:layout_marginBottom="50dp"
+    android:background="@drawable/x">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="@dimen/_24sdp"
+            android:layout_marginEnd="@dimen/_24sdp"
+            android:backgroundTint="#fc8c2c"
+            android:src="@drawable/ic_baseline_add"
+            android:contentDescription="@string/app_name" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/addFab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_24sdp"
+            android:layout_marginBottom="@dimen/_24sdp"
+            app:icon="@drawable/ic_baseline_add"
+            android:backgroundTint="#fc8c2c"
+            android:textAllCaps="false"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/addFab"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Add Compartment"/>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/addFab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_24sdp"
+            app:icon="@drawable/ic_baseline_add"
+            android:backgroundTint="#fc8c2c"
+            android:text="Add Property"
+            android:textAllCaps="false"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/addFab1"
+            app:layout_constraintEnd_toEndOf="@+id/addFab1" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/propertyMgtRecyclerView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+<com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/navigation"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/ff"
+    app:itemRippleColor="@color/white"
+    app:itemIconTint="@color/black"
+    android:alpha="0.8"
+    app:itemTextColor="#424242"
+    app:labelVisibilityMode="selected"
+    app:menu="@menu/bottom_navigation_menu"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"/>
+</RelativeLayout>
+

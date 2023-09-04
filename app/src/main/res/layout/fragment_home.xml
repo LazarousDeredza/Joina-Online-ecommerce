@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/ee"
+    tools:context=".fragments.fragmentHome">
+
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_110sdp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/app_font_bold"
+                android:gravity="center"
+                android:text="Joina City"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_below="@+id/title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:background="@drawable/grad_background2" />
+
+            <TextView
+                android:id="@+id/slogan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/app_font_bold"
+                android:outlineAmbientShadowColor="@color/black"
+                android:text=". connecting you to the heart of the city ."
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/bottom"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/upper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_20sdp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/systems"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="@dimen/_85sdp"
+                    android:layout_height="@dimen/_85sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="@font/app_font_bold"
+                    android:text="\nSystems"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    app:cornerRadius="@dimen/_10sdp"
+                    app:icon="@drawable/icon_systems_new"
+                    app:iconGravity="textTop"
+                    app:iconSize="@dimen/_30sdp"
+                    app:iconTint="@color/white"
+                    app:rippleColor="#FFE0B2"
+                    app:strokeColor="@color/primary" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/offices"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="@dimen/_85sdp"
+                    android:layout_height="@dimen/_85sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="@font/app_font_bold"
+                    android:text="\nOffices"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    app:cornerRadius="@dimen/_10sdp"
+                    app:icon="@drawable/icon_offices_new"
+                    app:iconGravity="textTop"
+                    app:iconSize="@dimen/_30sdp"
+                    app:iconTint="@color/white"
+                    app:rippleColor="#FFE0B2"
+                    app:strokeColor="@color/primary" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/amusement"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="@dimen/_85sdp"
+                    android:layout_height="@dimen/_85sdp"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/app_font_bold"
+                    android:text="\nEntertainment"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    app:cornerRadius="@dimen/_10sdp"
+                    app:icon="@drawable/icon_entertainment1"
+                    app:iconGravity="textTop"
+                    app:iconSize="@dimen/_30sdp"
+                    app:iconTint="@color/white"
+                    app:rippleColor="#FFE0B2"
+                    app:strokeColor="@color/primary" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/middle"
+                android:layout_below="@id/upper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_20sdp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/tenants"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="@dimen/_85sdp"
+                    android:layout_height="@dimen/_85sdp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="@font/app_font_bold"
+                    android:text="\nTenants"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    app:cornerRadius="@dimen/_10sdp"
+                    app:icon="@drawable/icon_tenants_new"
+                    app:iconGravity="textTop"
+                    app:iconSize="@dimen/_30sdp"
+                    app:iconTint="@color/white"
+                    app:rippleColor="#FFE0B2"
+                    app:strokeColor="@color/primary" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/joina"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="@dimen/_85sdp"
+                    android:layout_height="@dimen/_85sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="@font/app_font_bold"
+                    android:text="\nJoina Online"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    app:cornerRadius="@dimen/_10sdp"
+                    app:icon="@drawable/icon_jj"
+                    app:iconGravity="textTop"
+                    app:iconSize="@dimen/_30sdp"
+                    app:iconTint="@color/white"
+                    app:rippleColor="#FFE0B2"
+                    app:strokeColor="@color/primary" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/parking"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="@dimen/_85sdp"
+                    android:layout_height="@dimen/_85sdp"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/app_font_bold"
+                    android:text="\nParking"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    app:cornerRadius="@dimen/_10sdp"
+                    app:icon="@drawable/icon_parking_new"
+                    app:iconGravity="textTop"
+                    app:iconSize="@dimen/_30sdp"
+                    app:iconTint="@color/white"
+                    app:rippleColor="#FFE0B2"
+                    app:strokeColor="@color/primary" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lower"
+                android:layout_below="@id/middle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/_20sdp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/building"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="@dimen/_85sdp"
+                    android:layout_height="@dimen/_85sdp"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/app_font_bold"
+                    android:text="\nBuilding"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    app:cornerRadius="@dimen/_10sdp"
+                    app:icon="@drawable/icon_building_new"
+                    app:iconGravity="textTop"
+                    app:iconSize="@dimen/_30sdp"
+                    app:iconTint="@color/white"
+                    app:rippleColor="#FFE0B2"
+                    app:strokeColor="@color/primary" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/events"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="@dimen/_85sdp"
+                    android:layout_height="@dimen/_85sdp"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/app_font_bold"
+                    android:text="\nEvents"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    app:cornerRadius="@dimen/_10sdp"
+                    app:icon="@drawable/icon_events_new"
+                    app:iconGravity="textTop"
+                    app:iconSize="@dimen/_30sdp"
+                    app:iconTint="@color/white"
+                    app:rippleColor="#FFE0B2"
+                    app:strokeColor="@color/primary" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/adverts"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="@dimen/_85sdp"
+                    android:layout_height="@dimen/_85sdp"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/app_font_bold"
+                    android:text="\nAdverts"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    app:cornerRadius="@dimen/_10sdp"
+                    app:icon="@drawable/icon_adverts"
+                    app:iconGravity="textTop"
+                    app:iconSize="@dimen/_30sdp"
+                    app:iconTint="@color/white"
+                    app:rippleColor="#FFE0B2"
+                    app:strokeColor="@color/primary" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

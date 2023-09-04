@@ -1,0 +1,656 @@
+<resources>
+    <string name="app_name">Joina City</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="brand">Brand</string>
+
+    <string name="screen1">Shopping Mall</string>
+    <string name="screen2">Offices</string>
+    <string name="screen3">Smart Parking</string>
+
+    <string name="screen1desc">The largest indoor shopping mall in Zimbabwe with more than 100 enterprises.</string>
+    <string name="screen2desc">From private offices and cubicles to training rooms and event spaces with access to wifi and on-site kitchen.</string>
+    <string name="screen3desc">600 safe and secure bays underground parking supported by excellent security</string>
+    <string name="startDesc">One stop location for all your shopping needs, offices to let and 600 safe and secure parking bays.</string>
+
+
+    <string name="email">Email Id</string>
+    <string name="passowrd">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="show_pwd">Show Password</string>
+    <string name="hide_pwd">Hide Password</string>
+    <string name="forgot">Forgot password?</string>
+    <string name="closebutton">Close Button for Activity</string>
+    <string name="newUser">Not a Member yet? Sign Up here.</string>
+    <string name="fullName">Full Name</string>
+    <string name="mobileNumber">Mobile Number</string>
+    <string name="location">Location</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="terms_conditions">By clicking SignUp you agree all the Terms and Conditions.</string>
+    <string name="signUp">SIGN UP</string>
+    <string name="already_user">Already have Account? Login here.</string>
+    <string name="registered_emailid">Please enter your Registered Email Id below:</string>
+    <string name="submit">SUBMIT</string>
+    <string name="back">BACK</string>
+    <string name="action_Cart">Cart</string>
+    <string name="open_drawer">openDrawer</string>
+    <string name="close_drawer">closeDrawer</string>
+
+
+    <string-array name="status">
+        <item>Active</item>
+        <item>Inactive</item>
+    </string-array>
+
+    <string-array name="priority">
+        <item>Low</item>
+        <item>Middle</item>
+        <item>High</item>
+    </string-array>
+
+    <string-array name="categorylist">
+        <item>category1</item>
+        <item>category2</item>
+
+    </string-array>
+
+    <string-array name="subcategorylist">
+        <item>subcategory1</item>
+        <item>subcategory2</item>
+    </string-array>
+
+    <string-array name="discountType">
+        <item>Type1</item>
+        <item>Type2</item>
+        <item>Type3</item>
+        <item>Type4</item>
+    </string-array>
+
+    <string-array name="promotionFormStatus">
+        <item>active</item>
+        <item>inactive</item>
+    </string-array>
+    <string-array name="promotionFormType">
+        <item>Type1</item>
+        <item>Type2</item>
+        <item>Type3</item>
+        <item>Type4</item>
+    </string-array>
+
+
+    <string-array name="propertyMgt_list_propertyName">
+        <item>Casual</item>
+        <item>Shawn2</item>
+        <item>Shawn3</item>
+        <item>Casual2</item>
+        <item>Shawn5</item>
+        <item>Shawn6</item>
+        <item>Shawn7</item>
+        <item>Tatenda</item>
+        <item>Shawn9</item>
+        <item>Shawn10</item>
+        <item>Shawn11</item>
+        <item>Shawn12</item>
+    </string-array>
+
+    <string-array name="propertyMgt_list_propertyName1">
+        <item>Tenant</item>
+        <item>Shawn</item>
+        <item>Tanaka</item>
+        <item>Ssssee</item>
+        <item>Shawn5</item>
+        <item>Ssssse</item>
+        <item>Shawn7</item>
+        <item>Shassr</item>
+        <item>Shser9</item>
+        <item>Shawn10</item>
+        <item>Shavfv1</item>
+        <item>Shawn12</item>
+    </string-array>
+
+    <string-array name="propertyMgt_list_propertyAddress">
+        <item>Adress</item>
+        <item>Joina2</item>
+        <item>Joina3</item>
+        <item>Joina4</item>
+        <item>Joina5</item>
+        <item>Joina6</item>
+        <item>Joina7</item>
+        <item>Joina8</item>
+        <item>Joina9</item>
+
+    </string-array>
+
+    <string-array name="propertyMgt_list_propertyDate">
+        <item>TimeIn</item>
+        <item>02/01/22</item>
+        <item>03/01/22</item>
+        <item>04/01/22</item>
+        <item>05/01/22</item>
+        <item>06/01/22</item>
+        <item>07/01/22</item>
+        <item>08/01/22</item>
+        <item>09/01/22</item>
+        <item>10/01/22</item>
+        <item>11/01/22</item>
+        <item>12/01/22</item>
+    </string-array>
+
+    <string-array name="propertyMgt_list_propertyDate1">
+        <item>TimeOut</item>
+        <item>02/01/22</item>
+        <item>03/01/22</item>
+        <item>04/01/22</item>
+        <item>05/01/22</item>
+        <item>06/01/22</item>
+        <item>07/01/22</item>
+        <item>08/01/22</item>
+        <item>09/01/22</item>
+        <item>10/01/22</item>
+        <item>11/01/22</item>
+        <item>12/01/22</item>
+    </string-array>
+
+    <string-array name="taxName">
+        <item>Tax1</item>
+        <item>Tax2</item>
+        <item>Tax3</item>
+        <item>Tax4</item>
+        <item>Tax5</item>
+        <item>Tax6</item>
+        <item>Tax7</item>
+        <item>Tax8</item>
+        <item>Tax9</item>
+        <item>Tax10</item>
+        <item>Tax11</item>
+        <item>Tax12</item>
+        <item>Tax13</item>
+        <item>Tax14</item>
+        <item>Tax15</item>
+        <item>Tax16</item>
+        <item>Tax17</item>
+        <item>Tax18</item>
+        <item>Tax19</item>
+        <item>Tax20</item>
+    </string-array>
+
+    <string-array name="taxDescription">
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+    </string-array>
+
+    <string-array name="taxPercentage">
+        <item>1%</item>
+        <item>2%</item>
+        <item>3%</item>
+        <item>4%</item>
+        <item>5%</item>
+        <item>6%</item>
+        <item>7%</item>
+        <item>8%</item>
+        <item>9%</item>
+        <item>10%</item>
+        <item>11%</item>
+        <item>12%</item>
+        <item>13%</item>
+        <item>14%</item>
+        <item>15%</item>
+        <item>16%</item>
+        <item>17%</item>
+        <item>18%</item>
+        <item>19%</item>
+        <item>20%</item>
+    </string-array>
+
+    <string-array name="discName">
+        <item>Disc</item>
+        <item>Disc</item>
+        <item>Disc</item>
+        <item>Disc</item>
+        <item>Disc</item>
+        <item>Disc</item>
+        <item>Disc</item>
+        <item>Disc</item>
+        <item>Disc</item>
+        <item>Disc</item>
+        <item>Disc</item>
+        <item>Disc</item>
+        <item>Disc</item>
+        <item>Disc</item>
+        <item>Disc</item>
+        <item>Disc</item>
+        <item>Disc</item>
+        <item>Disc</item>
+        <item>Disc</item>
+        <item>Disc</item>
+    </string-array>
+
+    <string-array name="discPercentage">
+        <item>01%</item>
+        <item>12%</item>
+        <item>01%</item>
+        <item>30%</item>
+        <item>44%</item>
+        <item>40%</item>
+        <item>06%</item>
+        <item>03%</item>
+        <item>07%</item>
+        <item>11%</item>
+        <item>01%</item>
+        <item>12%</item>
+        <item>01%</item>
+        <item>03%</item>
+        <item>44%</item>
+        <item>04%</item>
+        <item>06%</item>
+        <item>03%</item>
+        <item>70%</item>
+        <item>11%</item>
+    </string-array>
+
+    <string-array name="discType">
+        <item>Type</item>
+        <item>Type</item>
+        <item>Type</item>
+        <item>Type</item>
+        <item>Type</item>
+        <item>Type</item>
+        <item>Type</item>
+        <item>Type</item>
+        <item>Type</item>
+        <item>Type</item>
+        <item>Type</item>
+        <item>Type</item>
+        <item>Type</item>
+        <item>Type</item>
+        <item>Type</item>
+        <item>Type</item>
+        <item>Type</item>
+        <item>Type</item>
+        <item>Type</item>
+        <item>Type</item>
+    </string-array>
+
+    <string-array name="startDate">
+        <item>IN</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+    </string-array>
+
+    <string-array name="endDate">
+        <item>OUT</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+    </string-array>
+
+    <string-array name="promotionName">
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+    </string-array>
+
+    <string-array name="promotionPercentage">
+        <item>12%</item>
+        <item>03%</item>
+        <item>02%</item>
+        <item>02%</item>
+        <item>03%</item>
+        <item>10%</item>
+    </string-array>
+
+    <string-array name="promotionStatus">
+        <item>active</item>
+        <item>inactive</item>
+        <item>active</item>
+        <item>inactive</item>
+        <item>active</item>
+        <item>inactive</item>
+    </string-array>
+
+    <string-array name="promoStartDate">
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+        <item>01/03/22</item>
+    </string-array>
+
+    <string-array name="promoEndDate">
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+        <item>31/10/22</item>
+    </string-array>
+
+    <string-array name="categoryName">
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+    </string-array>
+
+    <string-array name="categoryDescription">
+        <item>Description Description</item>
+        <item>Description Description</item>
+        <item>Description Description</item>
+        <item>Description Description</item>
+        <item>Description Description</item>
+        <item>Description Description</item>
+        <item>Description Description</item>
+        <item>Description Description</item>
+        <item>Description Description</item>
+        <item>Description Description</item>
+        <item>Description Description</item>
+        <item>Description Description</item>
+        <item>Description Description</item>
+        <item>Description Description</item>
+    </string-array>
+
+
+    <string-array name="orderNumber">
+        <item>Time</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="orderNumber1">
+        <item></item>
+        <item>2</item>
+        <item>03</item>
+        <item>44</item>
+        <item>05</item>
+        <item>06</item>
+        <item>44</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>55</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="userName">
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+        <item>Name</item>
+    </string-array>
+
+    <string-array name="totalPrice">
+        <item>$120</item>
+        <item>$454</item>
+        <item>$120</item>
+        <item>$450</item>
+        <item>$120</item>
+        <item>$451</item>
+        <item>$120</item>
+        <item>$454</item>
+        <item>$120</item>
+        <item>$458</item>
+        <item>$120</item>
+        <item>$450</item>
+        <item>$405</item>
+    </string-array>
+
+    <string-array name="oStatus">
+        <item>active</item>
+        <item>active</item>
+        <item>active</item>
+        <item>active</item>
+        <item>active</item>
+        <item>active</item>
+        <item>active</item>
+        <item>active</item>
+        <item>active</item>
+        <item>active</item>
+        <item>active</item>
+        <item>active</item>
+    </string-array>
+
+    <string-array name="timeIn">
+        <item>Time</item>
+        <item>01:23</item>
+        <item>01:23</item>
+        <item>01:23</item>
+        <item>01:23</item>
+        <item>01:23</item>
+        <item>01:23</item>
+        <item>01:23</item>
+        <item>01:23</item>
+        <item>01:23</item>
+        <item>01:23</item>
+        <item>01:23</item>
+    </string-array>
+
+    <string-array name="timeOut">
+        <item>Time</item>
+        <item>01:23</item>
+        <item>01:23</item>
+        <item>01:23</item>
+        <item>01:23</item>
+        <item>01:23</item>
+        <item>01:23</item>
+        <item>01:23</item>
+        <item>01:23</item>
+        <item>01:23</item>
+        <item>01:23</item>
+        <item>01:23</item>
+    </string-array>
+
+    <string-array name="cardNumber">
+        <item>C000000001</item>
+        <item>C000000002</item>
+        <item>C000000003</item>
+        <item>C000000004</item>
+        <item>C000000005</item>
+        <item>C000000006</item>
+        <item>C000000007</item>
+        <item>C000000008</item>
+        <item>C000000009</item>
+        <item>C000000010</item>
+        <item>C000000011</item>
+        <item>C000000012</item>
+    </string-array>
+
+    <string-array name="startDatee">
+        <item>10:12 12/02/23</item>
+        <item>01:23 12/02/23</item>
+        <item>01:23 12/02/23</item>
+        <item>01:23 12/02/23</item>
+        <item>01:23 12/02/23</item>
+        <item>01:23 12/02/23</item>
+        <item>01:23 12/02/23</item>
+        <item>01:23 12/02/23</item>
+        <item>01:23 12/02/23</item>
+        <item>01:23 12/02/23</item>
+        <item>01:23 12/02/23</item>
+        <item>01:23 12/02/23</item>
+    </string-array>
+
+    <string-array name="endDatee">
+        <item>10:12 12/02/23</item>
+        <item>01:23 12/02/23</item>
+        <item>01:23 12/02/23</item>
+        <item>01:23 12/02/23</item>
+        <item>01:23 12/02/23</item>
+        <item>01:23 12/02/23</item>
+        <item>01:23 12/02/23</item>
+        <item>01:23 12/02/23</item>
+        <item>01:23 12/02/23</item>
+        <item>01:23 12/02/23</item>
+        <item>01:23 12/02/23</item>
+        <item>01:23 12/02/23</item>
+    </string-array>
+
+    <string-array name="mobile">
+        <item>0785984235</item>
+        <item>0718976733</item>
+        <item>0785984235</item>
+        <item>0718976733</item>
+        <item>0785984235</item>
+        <item>0718976733</item>
+        <item>0785984235</item>
+        <item>0718976733</item>
+        <item>0785984235</item>
+        <item>0718976733</item>
+        <item>0785984235</item>
+        <item>0718976733</item>
+    </string-array>
+
+    <string-array name="cardState">
+        <item>Active</item>
+        <item>Active</item>
+        <item>Active</item>
+        <item>Active</item>
+        <item>Suspended</item>
+        <item>Active</item>
+        <item>Active</item>
+        <item>Suspended</item>
+        <item>Active</item>
+        <item>Active</item>
+        <item>Active</item>
+        <item>Active</item>
+    </string-array>
+
+    <string-array name="amount">
+        <item>$12.00</item>
+        <item>$11.00</item>
+        <item>$22.00</item>
+        <item>$10.00</item>
+        <item>$12.00</item>
+        <item>$11.00</item>
+        <item>$22.00</item>
+        <item>$10.00</item>
+        <item>$12.00</item>
+        <item>$11.00</item>
+        <item>$22.00</item>
+        <item>$10.00</item>
+    </string-array>
+
+    <string-array name="paymentMethod">
+        <item>Ecocash</item>
+        <item>Card</item>
+        <item>Cash</item>
+        <item>Ecocash</item>
+        <item>Card</item>
+        <item>Cash</item>
+        <item>Ecocash</item>
+        <item>Card</item>
+        <item>Cash</item>
+        <item>Ecocash</item>
+        <item>Card</item>
+        <item>Cash</item>
+    </string-array>
+
+    <string-array name="states_array">
+        <item>Harare</item>
+        <item>Manicaland</item>
+        <item>Mash Central</item>
+        <item>Mash East</item>
+        <item>Mash West</item>
+        <item>Masvingo</item>
+        <item>Bulawayo</item>
+        <item>Matebeleland</item>
+        <item>Midlands</item>
+
+    </string-array>
+
+    <string-array name="countries_array">
+        <item>Zimbabwe</item>
+    </string-array>
+
+</resources>

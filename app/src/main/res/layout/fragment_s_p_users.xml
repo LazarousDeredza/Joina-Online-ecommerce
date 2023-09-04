@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".SmartParking.Admin.Fragments.SPUsersFragment">
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/txt2"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Joina City Smart Parking"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:textSize="@dimen/_10sdp" />-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/buttons"
+
+                >
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/addUser"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginStart="19.50dp"
+                    android:text="ADD USERS"
+                    android:outlineAmbientShadowColor="@color/black"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    app:strokeColor="@color/black"
+                    app:rippleColor="@color/primary"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/editUsers"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="19.50dp"
+                    android:text="Edit Users"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    app:strokeColor="@color/black"
+                    app:rippleColor="@color/primary"
+                    />
+
+
+
+            </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardContents"
+            app:cardCornerRadius="@dimen/_15sdp"
+            app:cardPreventCornerOverlap="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/buttons"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/grad_background">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttons"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="visible"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>

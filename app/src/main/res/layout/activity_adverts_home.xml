@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/x"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Adverts.AdvertsHomeActivity">
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/top"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:alpha="0.9"-->
+<!--        android:background="@drawable/advert"-->
+<!--        android:layout_height="200dp">-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/back"-->
+<!--            android:layout_width="@dimen/_30sdp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/_5sdp"-->
+<!--            android:alpha="0.5"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            app:icon="@drawable/icon_back"-->
+<!--            app:iconGravity="textStart"-->
+<!--            app:iconSize="@dimen/_25sdp"-->
+<!--            app:iconTint="#FFAB40" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/title"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="@dimen/_90sdp"-->
+<!--            android:shadowColor="@color/black"-->
+<!--            android:fontFamily="@font/app_font"-->
+<!--            android:text="Adverts"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/_18sdp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <View-->
+<!--            android:id="@+id/view"-->
+<!--            android:layout_width="@dimen/_130sdp"-->
+<!--            android:layout_height="@dimen/_3sdp"-->
+<!--            android:layout_below="@+id/title"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="@dimen/_20sdp"-->
+<!--            android:layout_marginBottom="@dimen/_7sdp"-->
+<!--            android:background="@color/white" />-->
+
+<!--    </RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp">
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/logo_recycler"-->
+<!--            android:padding="2dp"-->
+<!--            android:background="@color/background"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:fontFamily="@font/app_font"
+            android:text="Ask us a question..."
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/_8sdp"
+            android:textStyle="italic" />
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_85sdp"
+            android:layout_below="@id/text"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_master"
+            app:rippleColor="@color/black"
+            app:strokeColor="@color/black"
+            app:strokeWidth="@dimen/_2sdp" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:alpha="0.5"
+        android:background="#757575">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/slogan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/app_font"
+                android:outlineAmbientShadowColor="@color/black"
+                android:shadowColor="@color/black"
+                android:text="Advertisement management system"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_17sdp" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <!--    </RelativeLayout>-->
+</RelativeLayout>

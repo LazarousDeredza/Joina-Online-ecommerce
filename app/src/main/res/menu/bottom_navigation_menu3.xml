@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragmentDetails"
+        android:icon="@drawable/icon_wishlist"
+        android:title="View All Tenants"/>
+
+    <item
+        android:id="@+id/fragmentProfile"
+        android:icon="@drawable/icon_account"
+        android:title="Create Tenant Profile"/>
+
+    <item
+        android:id="@+id/fragmentSearch"
+        android:icon="@drawable/icon_search"
+        android:title="Search"/>
+
+</menu>

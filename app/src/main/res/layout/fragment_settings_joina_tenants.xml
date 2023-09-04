@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/primary"
+            app:title="     Settings" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:backgroundTint="@color/black"
+            android:elevation="@dimen/_2sdp"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20sdp">
+
+                <TextView
+                    android:id="@+id/shop_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:text="Shop Name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/seller_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shop_name"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Seller ID : R001"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/seller_id"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="#E0E0E0"
+                    app:cardElevation="@dimen/_2sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/black">
+
+                        <TextView
+                            android:id="@+id/shop_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:text="Shop Status"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/live_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_toRightOf="@id/shop_status"
+                            android:text="* Live"
+                            android:textColor="#4CAF50"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/shop_status"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:text="View your shop status here"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/shop_status_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:checked="true"
+                            android:enabled="false"
+                            android:thumbTint="#4CAF50" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/share_shop"
+                    android:layout_width="@dimen/_55sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shop_name"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Share Shop"
+                    android:textColor="#4CAF50"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/share_shop_image"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_23sdp"
+                    android:src="@drawable/share_joina" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/shop_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:text="Shop Settings"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shop_settings"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_2sdp">
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/shop_profile"-->
+<!--                android:layout_width="@dimen/_95sdp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:backgroundTint="@color/white"-->
+<!--                android:elevation="0dp"-->
+<!--                android:text="Shop \nProfile"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="@dimen/_10sdp"-->
+<!--                app:icon="@drawable/storefront"-->
+<!--                app:iconGravity="textTop"-->
+<!--                app:iconPadding="@dimen/_10sdp"-->
+<!--                app:iconSize="@dimen/_20sdp"-->
+<!--                app:iconTint="@color/black"-->
+<!--                app:rippleColor="@color/ripple" />-->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/shop_content"
+                android:layout_width="@dimen/_95sdp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/white"
+                android:elevation="0dp"
+                android:text="Shop \nContent"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                app:icon="@drawable/icon_policy"
+                app:iconGravity="textTop"
+                app:iconPadding="@dimen/_10sdp"
+                app:iconSize="@dimen/_20sdp"
+                app:iconTint="@color/black"
+                app:rippleColor="@color/ripple" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/payments"
+                android:layout_width="@dimen/_95sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/white"
+                android:elevation="0dp"
+                android:text="Payment\n Details"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                app:icon="@drawable/payments"
+                app:iconGravity="textTop"
+                app:iconPadding="@dimen/_10sdp"
+                app:iconSize="@dimen/_20sdp"
+                app:iconTint="@color/black"
+                app:rippleColor="@color/ripple" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/promotions"
+                android:layout_width="@dimen/_95sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:backgroundTint="@color/white"
+                android:elevation="0dp"
+                android:text="\nPromotions"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                app:icon="@drawable/promotions"
+                app:iconGravity="textTop"
+                app:iconPadding="@dimen/_10sdp"
+                app:iconSize="@dimen/_20sdp"
+                app:iconTint="@color/black"
+                app:rippleColor="@color/ripple" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tax_details"
+                android:layout_width="@dimen/_95sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shop_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:backgroundTint="@color/white"
+                android:elevation="0dp"
+                android:text="Tax \nDetails"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                app:icon="@drawable/tax_details"
+                app:iconGravity="textTop"
+                app:iconPadding="@dimen/_10sdp"
+                app:iconSize="@dimen/_20sdp"
+                app:iconTint="@color/black"
+                app:rippleColor="@color/ripple" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/seller_account"
+                android:layout_width="@dimen/_95sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/payments"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:backgroundTint="@color/white"
+                android:elevation="0dp"
+                android:text="Seller \nAccount"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                app:icon="@drawable/seller_account"
+                app:iconGravity="textTop"
+                app:iconPadding="@dimen/_10sdp"
+                app:iconSize="@dimen/_20sdp"
+                app:iconTint="@color/black"
+                app:rippleColor="@color/ripple" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/discount"
+                android:layout_width="@dimen/_95sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/promotions"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:backgroundTint="@color/white"
+                android:elevation="0dp"
+                android:text="\nDiscount"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                app:icon="@drawable/discount"
+                app:iconGravity="textTop"
+                app:iconPadding="@dimen/_10sdp"
+                app:iconSize="@dimen/_20sdp"
+                app:iconTint="@color/black"
+                app:rippleColor="@color/ripple" />
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/address"-->
+<!--                android:layout_width="@dimen/_95sdp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/shop_profile"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_marginTop="@dimen/_20sdp"-->
+<!--                android:backgroundTint="@color/white"-->
+<!--                android:elevation="0dp"-->
+<!--                android:text="\nAddress"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="@dimen/_10sdp"-->
+<!--                app:icon="@drawable/address"-->
+<!--                app:iconGravity="textTop"-->
+<!--                app:iconPadding="@dimen/_10sdp"-->
+<!--                app:iconSize="@dimen/_20sdp"-->
+<!--                app:iconTint="@color/black"-->
+<!--                app:rippleColor="@color/ripple" />-->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/marketing_banners"
+                android:layout_width="@dimen/_95sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tax_details"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:backgroundTint="@color/white"
+                android:elevation="0dp"
+                android:text="Marketing\nBanners"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                app:icon="@drawable/markeing_banners"
+                app:iconGravity="textTop"
+                app:iconPadding="@dimen/_10sdp"
+                app:iconSize="@dimen/_20sdp"
+                app:iconTint="@color/black"
+                app:rippleColor="@color/ripple" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ratings_and_reviews"
+                android:layout_width="@dimen/_95sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seller_account"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:backgroundTint="@color/white"
+                android:elevation="0dp"
+                android:text="Ratings &amp;\nReviews"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                app:icon="@drawable/ratings_and_reviews"
+                app:iconGravity="textTop"
+                app:iconPadding="@dimen/_10sdp"
+                app:iconSize="@dimen/_20sdp"
+                app:iconTint="@color/black"
+                app:rippleColor="@color/ripple" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/shipping_and_delivery"
+                android:layout_width="@dimen/_95sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/discount"
+                android:layout_alignParentRight="true"
+                android:backgroundTint="@color/white"
+
+                android:elevation="0dp"
+                android:text="Shipping &amp; \nDelivery"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:icon="@drawable/shipping_and_delivery"
+                app:iconGravity="textTop"
+                app:iconPadding="@dimen/_10sdp"
+                app:iconSize="@dimen/_20sdp"
+                app:iconTint="@color/black"
+                app:rippleColor="@color/ripple" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/account_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:text="Account Settings"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_below="@id/account_settings"
+            android:text="Logout"
+            android:textColor="@color/purple_700"
+            android:textSize="@dimen/_9sdp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+</ScrollView>

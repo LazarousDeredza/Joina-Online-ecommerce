@@ -1,0 +1,80 @@
+{
+  "citylist": [
+    {
+      "id": 1,
+      "city": "Harare",
+      "State": "Zimbabwe"
+    },
+    {
+      "id": 2,
+      "city": "Bulawayo",
+      "State": "Zimbabwe"
+    },
+    {
+      "id": 3,
+      "city": "Chitungwiza",
+      "State": "Zimbabwe"
+    },
+    {
+      "id": 4,
+      "city": "Mutare",
+      "State": "Zimbabwe"
+    },
+    {
+      "id": 5,
+      "city": "Gweru",
+      "State": "Zimbabwe"
+    },
+    {
+      "id": 6,
+      "city": "Epworth",
+      "State": "Zimbabwe"
+    },
+    {
+      "id": 7,
+      "city": "Kwekwe",
+      "State": "Zimbabwe"
+    },
+    {
+      "id": 8,
+      "city": "Kadoma",
+      "State": "Zimbabwe"
+    },
+    {
+      "id": 9,
+      "city": "Masvingo",
+      "State": "Zimbabwe"
+    },
+    {
+      "id": 10,
+      "city": "Chinhoyi",
+      "State": "Zimbabwe"
+    },
+    {
+      "id": 11,
+      "city": "Marondera",
+      "State": "Zimbabwe"
+    },
+    {
+      "id": 12,
+      "city": "Norton",
+      "State": "Zimbabwe"
+    },
+    {
+      "id": 13,
+      "city": "Chegutu",
+      "State": "Zimbabwe"
+    },
+    {
+      "id": 14,
+      "city": "Bindura",
+      "State": "Zimbabwe"
+    },
+    {
+      "id": 15,
+      "city": "Victoria Falls",
+      "State": "Zimbabwe"
+    }
+
+    ]
+}

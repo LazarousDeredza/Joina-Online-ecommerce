@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/margin_10dp"
+        app:cardElevation="@dimen/margin_4dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="30dp">
+
+                <com.joina.joinaonline.customfonts.MyTextViewMeriendaRegular
+                    android:id="@+id/order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="order#213444234"
+                    android:textColor="@color/primary"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/order_id"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="2dp"
+                    android:background="@color/primary" />
+                <View
+                    android:id="@+id/centerView"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <com.joina.joinaonline.customfonts.MyTextViewMeriendaRegular
+                    android:id="@+id/dateTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_id"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:text="Date:"
+                    android:textSize="14dp" />
+
+                <com.joina.joinaonline.customfonts.MyTextViewMeriendaRegular
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_id"
+                    android:layout_toRightOf="@+id/centerView"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:text="12/04/2018"
+                    android:textSize="14dp" />
+
+                <com.joina.joinaonline.customfonts.MyTextView
+                    android:id="@+id/total_amountTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dateTV"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:text="Amount:" />
+                <com.joina.joinaonline.customfonts.MyTextView
+                    android:id="@+id/total_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/centerView"
+                    android:layout_below="@+id/date"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:text="Zwl.500.00" />
+
+                <com.joina.joinaonline.customfonts.MyTextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/light_green"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentRight="true"
+                    android:text="pending" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/total_amountTV"
+                    android:id="@+id/supplierDivivder"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="1dp"
+                    android:background="@color/primary" />
+
+                <com.joina.joinaonline.customfonts.MyTextView
+                    android:id="@+id/suppliersTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/supplierDivivder"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:text="Suppliers" />
+
+                <com.joina.joinaonline.customfonts.MyTextView
+                    android:id="@+id/supplierName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/suppliersTitle"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:text="" />
+
+                <com.joina.joinaonline.customfonts.MyTextView
+                    android:id="@+id/supplierTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/suppliersTitle"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="75dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:text="" />
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

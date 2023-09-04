@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Tenants.PropertyManager.PropertyManagerDashboardActivity">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:background="@drawable/ten">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:fontFamily="@font/app_font"
+            android:shadowColor="@color/black"
+            android:text="Tenants"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_4sdp"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:fontFamily="@font/app_font"
+            android:shadowColor="@color/black"
+            android:text="Property Manager Portal"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/middleScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:background="@drawable/x">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:alpha="0.9"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/card2hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/card2v1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/leaseAgreement"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tenants:"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10sdp"
+                                android:textStyle="bold"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/card2v2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+                            <TextView
+
+                                android:id="@+id/Naenant"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="500"
+                                android:layout_marginTop="10dp"
+                                android:textSize="@dimen/_16sdp"
+                                android:textColor="#fc8c2c"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/card2v3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:id="@+id/leaseStartdate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Stands:"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/black"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/card2v4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="8dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/leaseStartDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="250"
+                                android:textColor="#fc8c2c"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_16sdp"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/card1v5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:id="@+id/leaseStart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Vacant Stands:"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/black"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/card1v6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="8dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/lease"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="25"
+                                android:textColor="#fc8c2c"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_16sdp"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/buttons"
+                        android:layout_below="@id/card2hori"
+                        android:layout_centerInParent="true"
+                        >
+
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <RelativeLayout
+                android:id="@+id/tenantMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_below="@id/card1"
+                >
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/propertyInformation"
+                    android:layout_width="@dimen/_125sdp"
+                    android:layout_height="@dimen/_125sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:alpha="0.9"
+                    android:backgroundTint="@color/card_background"
+                    android:fontFamily="@font/app_font"
+                    android:shadowRadius="5"
+                    android:onClick="pmPropertyManagement"
+                    android:text="Property\nManagement"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_9sdp"
+                    app:cornerRadius="@dimen/_13sdp"
+                    app:icon="@drawable/property_information"
+                    app:iconGravity="textTop"
+                    app:iconSize="@dimen/_50sdp"
+                    app:iconTint="#FFAB40"
+                    app:rippleColor="#FFE0B2"
+                    app:strokeColor="@color/black" />
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/tenantManagement"
+                    android:layout_width="@dimen/_125sdp"
+                    android:layout_height="@dimen/_125sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:alpha="0.9"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/app_font"
+                    android:shadowColor="#FFCC80"
+                    android:shadowRadius="5"
+                    android:onClick="pmTenantManagement"
+                    android:text="Tenant\nManagement"
+                    android:layout_marginRight="@dimen/_20sdp"
+
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_9sdp"
+                    app:cornerRadius="@dimen/_13sdp"
+                    app:icon="@drawable/rental"
+                    app:iconGravity="textTop"
+                    app:iconSize="@dimen/_50sdp"
+                    app:iconTint="#FFAB40"
+                    app:rippleColor="#FFE0B2"
+                    app:strokeColor="@color/black" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/tenantMenu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tenantMenu"
+                >
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mantainanceServices"
+                    android:layout_width="@dimen/_125sdp"
+                    android:layout_height="@dimen/_125sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:alpha="0.9"
+                    android:backgroundTint="@color/card_background"
+                    android:fontFamily="@font/app_font"
+                    android:shadowRadius="5"
+                    android:onClick="pmMaintananceManagement"
+                    android:text="Mantainance\nServices"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_9sdp"
+                    app:cornerRadius="@dimen/_13sdp"
+                    app:icon="@drawable/maintanance"
+                    app:iconGravity="textTop"
+                    app:iconSize="@dimen/_50sdp"
+                    app:iconTint="#FFAB40"
+                    app:rippleColor="#FFE0B2"
+                    app:strokeColor="@color/black" />
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/leaseManagement"
+                    android:layout_width="@dimen/_125sdp"
+                    android:layout_height="@dimen/_125sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:alpha="0.9"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/app_font"
+                    android:shadowColor="#FFCC80"
+                    android:shadowRadius="5"
+                    android:onClick="pmLeaseManagement"
+                    android:text="Lease\nManagement"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_9sdp"
+                    app:cornerRadius="@dimen/_13sdp"
+                    app:icon="@drawable/property_information"
+                    app:iconGravity="textTop"
+                    app:iconSize="@dimen/_50sdp"
+                    app:iconTint="#FFAB40"
+                    app:rippleColor="#FFE0B2"
+                    app:strokeColor="@color/black" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ff"
+        app:itemRippleColor="@color/white"
+        app:itemIconTint="@color/black"
+        android:alpha="0.8"
+        app:itemTextColor="#424242"
+        app:labelVisibilityMode="selected"
+        app:menu="@menu/bottom_navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+</RelativeLayout>
+

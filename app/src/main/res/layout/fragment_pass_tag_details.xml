@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".SmartParking.Admin.Fragments.UserDetailsFragment">
+
+        <TextView
+            android:id="@+id/cardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginHorizontal="19.50dp"
+            android:background="@drawable/grad_background"
+            android:text="Your Name here"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:padding="5dp"
+            />
+        <ImageView
+            android:id="@+id/cardIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardNumber"
+            android:src="@drawable/icon_card"
+            app:tint="@color/black"
+            android:layout_marginStart="19.50dp"
+            android:layout_marginTop="14dp"
+            />
+        <TextView
+            android:id="@+id/cardLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cardIcon"
+            android:text="Current Tag:"
+            android:textColor="@color/black"
+            android:layout_below="@+id/cardNumber"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:id="@+id/parkerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cardLabel"
+            android:text="Shawn T kanyemba"
+            android:layout_below="@+id/cardNumber"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="41dp"/>
+
+        <ImageView
+            android:id="@+id/mobileIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardIcon"
+            android:src="@drawable/mobile"
+            app:tint="@color/black"
+            android:layout_marginStart="19.50dp"
+            android:layout_marginTop="9dp"
+            />
+        <TextView
+            android:id="@+id/mobileLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mobileIcon"
+            android:text="Parker Mobile:"
+            android:textColor="@color/black"
+            android:layout_below="@+id/cardLabel"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:id="@+id/parkerMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mobileLabel"
+            android:text="0785984235"
+            android:layout_below="@+id/parkerName"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="29dp"/>
+        <ImageView
+            android:id="@+id/statusIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobileIcon"
+            android:src="@drawable/user_status"
+            app:tint="@color/black"
+            android:layout_marginStart="19.50dp"
+            android:layout_marginTop="9dp"
+            />
+        <TextView
+            android:id="@+id/statusLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/statusIcon"
+            android:text="Tag Status:"
+            android:textColor="@color/black"
+            android:layout_below="@+id/mobileLabel"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:id="@+id/userStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mobileLabel"
+            android:text="Active"
+            android:layout_below="@+id/parkerMobile"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="29dp"/>
+        <ImageView
+            android:id="@+id/startDateIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/statusIcon"
+            android:src="@drawable/time_icon"
+            app:tint="@color/black"
+            android:layout_marginStart="19.50dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/startDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/startDateIcon"
+            android:text="Time In:"
+            android:textColor="@color/black"
+            android:layout_below="@+id/statusLabel"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:id="@+id/startDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mobileLabel"
+            android:text="10:12 12/10/23"
+            android:layout_below="@+id/userStatus"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="28dp"/>
+        <ImageView
+            android:id="@+id/endDateIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startDateIcon"
+            android:src="@drawable/time_icon"
+            app:tint="@color/black"
+            android:layout_marginStart="19.50dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/endDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/endDateIcon"
+            android:text="Time Out:"
+            android:textColor="@color/black"
+            android:layout_below="@+id/startDateLabel"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:id="@+id/endDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/endDateLabel"
+            android:text="10:12 12/10/23"
+            android:layout_below="@+id/startDate"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="56dp"/>
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="20dp"
+            android:background="@color/primary"
+            android:layout_below="@+id/endDateIcon"
+            android:layout_marginHorizontal="19.50dp"
+            />
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/black"
+            android:layout_below="@+id/divider1"
+            android:layout_marginHorizontal="19.50dp"
+            />
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/background"
+            android:layout_below="@+id/divider2"
+            android:layout_marginHorizontal="19.50dp"
+            />
+        <TextView
+            android:id="@+id/textHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/divider3"
+            android:text="Pass Tag History"
+            android:textAlignment="center"
+            android:textSize="@dimen/_10sdp" />
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/text"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:gravity="center"-->
+<!--            android:id="@+id/buttons"-->
+
+<!--            >-->
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/addUser"-->
+<!--                style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginStart="19.50dp"-->
+<!--                android:text="PAYMENT"-->
+<!--                android:outlineAmbientShadowColor="@color/black"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="12dp"-->
+<!--                app:strokeColor="@color/black"-->
+<!--                app:rippleColor="@color/primary"-->
+<!--                />-->
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/editUsers"-->
+<!--                style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginEnd="19.50dp"-->
+<!--                android:text="PASS TAG"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="12dp"-->
+<!--                app:strokeColor="@color/black"-->
+<!--                app:rippleColor="@color/primary"-->
+<!--                />-->
+
+
+
+<!--        </LinearLayout>-->
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardContents"
+            app:cardCornerRadius="@dimen/_15sdp"
+            app:cardPreventCornerOverlap="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textHistory"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/grad_background">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttons"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="visible"
+                />
+        </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation_graph"
+    app:startDestination="@id/fragmentHome">
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.joina.joinaonline.fragments.fragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/fragmentSearch"
+        android:name="com.joina.joinaonline.fragments.fragmentSearch"
+        android:label="fragmentSearch"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/fragmentMore"
+        android:name="com.joina.joinaonline.fragments.fragmentMore"
+        android:label="fragmentMore"
+        tools:layout="@layout/fragment_more" />
+</navigation>

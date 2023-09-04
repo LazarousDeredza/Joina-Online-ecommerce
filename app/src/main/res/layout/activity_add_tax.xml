@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".JoinaonlineTenants.Settings.TaxDetails.AddTaxActivity">
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:title="Add Tax" />
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/name"
+    android:layout_below="@id/toolbar"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Name"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_marginStart="@dimen/_12sdp"
+    android:layout_marginEnd="@dimen/_12sdp">
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textImeMultiLine"
+        />
+</com.google.android.material.textfield.TextInputLayout>
+
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_marginTop="10dp"
+    android:id="@+id/description"
+    android:layout_below="@id/name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Description"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_marginStart="@dimen/_12sdp"
+    android:layout_marginEnd="@dimen/_12sdp">
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</com.google.android.material.textfield.TextInputLayout>
+
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_marginTop="10dp"
+    android:id="@+id/percentage"
+    android:layout_below="@+id/description"
+    android:layout_height="wrap_content"
+    android:hint="Percentage"
+    android:layout_marginStart="@dimen/_12sdp"
+    android:layout_marginEnd="@dimen/_12sdp"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="match_parent">
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        />
+</com.google.android.material.textfield.TextInputLayout>
+
+<Button
+    android:id="@+id/update_tax_info"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/percentage"
+    android:layout_marginStart="@dimen/_12sdp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="@dimen/_40sdp"
+    android:backgroundTint="@color/primary"
+    android:padding="@dimen/_12sdp"
+    android:text="Add"
+    android:textAllCaps="false"
+    android:textColor="@color/black" />
+
+</RelativeLayout>

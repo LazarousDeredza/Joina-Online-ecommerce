@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Tenants.TenantInterface.TenantRentalActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:background="@drawable/ten">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:fontFamily="@font/app_font"
+            android:shadowColor="@color/black"
+            android:text="Tenants"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_4sdp"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:fontFamily="@font/app_font"
+            android:shadowColor="@color/black"
+            android:text="Tenant Portal"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/middleScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/x">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:alpha="0.9"
+                app:cardBackgroundColor="@color/card_background"
+                app:cardCornerRadius="8dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/card1hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/card1v1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/rentalFee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rental Fee"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10sdp" />
+
+
+                            <TextView
+                                android:id="@+id/rentalAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="$500.00"
+                                android:textColor="#fc8c2c"
+                                android:textSize="@dimen/_13sdp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/viewVert1"
+                            android:layout_width="3dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#fc8c2c" />
+
+
+                        <LinearLayout
+                            android:id="@+id/card1v2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/paymentStatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Payment Status"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <TextView
+                                android:id="@+id/paymentStatuss"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Paid"
+                                android:textColor="#fc8c2c"
+                                android:textSize="@dimen/_16sdp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/viewVert2"
+                            android:layout_width="3dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#fc8c2c" />
+
+
+                        <LinearLayout
+                            android:id="@+id/card1v3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/extraServices"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Extra Services"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10sdp" />
+
+
+                            <TextView
+                                android:id="@+id/expiryDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="$25.00"
+                                android:textColor="#fc8c2c"
+                                android:textSize="@dimen/_13sdp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/payRent"
+                android:layout_below="@id/card1"
+                android:layout_centerInParent="true"
+                >
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="Total"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/totalAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="$525.00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/total"
+                    android:layout_marginLeft="20dp"/>
+
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:id="@+id/payRentButton"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_below="@id/payRent"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="#fc8c2c"
+                android:clickable="true"
+                android:text="Pay Online"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@+id/payRentButton"
+                android:alpha="0.9"
+                app:cardBackgroundColor="@color/card_background"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/propertyStatusTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:text="Transaction History"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/buttons2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_below="@id/propertyStatusTitle"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <ImageView
+                android:id="@+id/uploadIco"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/card2"
+                android:src="@drawable/upload"
+                android:layout_centerHorizontal="true"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:id="@+id/downloadlease"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_below="@id/uploadIco"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="#fc8c2c"
+                android:clickable="true"
+                android:text="Upload Proof of Payment"
+                android:textSize="@dimen/_10sdp" />
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ff"
+        app:itemRippleColor="@color/white"
+        app:itemIconTint="@color/black"
+        android:alpha="0.8"
+        app:itemTextColor="#424242"
+        app:labelVisibilityMode="selected"
+        app:menu="@menu/bottom_navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+</RelativeLayout>
+
+
+

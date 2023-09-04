@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Tenants.TenantInterface.TenantDashboardActivity">
+
+  <RelativeLayout
+      android:id="@+id/top"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/_140sdp"
+      android:background="@drawable/ten">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:fontFamily="@font/app_font"
+        android:shadowColor="@color/black"
+        android:text="Tenants"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_4sdp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:fontFamily="@font/app_font"
+        android:shadowColor="@color/black"
+        android:text="Tenant Portal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="italic" />
+
+  </RelativeLayout>
+
+  <androidx.core.widget.NestedScrollView
+      android:id="@+id/middleScrollView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/top"
+      android:background="@drawable/x">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <com.google.android.material.card.MaterialCardView
+          android:id="@+id/card1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="15dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginBottom="15dp"
+          android:alpha="0.9"
+          app:cardBackgroundColor="@color/card_background"
+          app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+          <LinearLayout
+              android:id="@+id/card1hori"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/card1v1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+              <TextView
+                  android:id="@+id/nametenant"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Tenant:"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/_10sdp" />
+
+
+              <TextView
+                  android:id="@+id/businessType"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Business\nType"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/_10sdp" />
+
+              <TextView
+                  android:id="@+id/startDate"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Start Date:"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/card1v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+              <TextView
+                  android:id="@+id/NameOftenant"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="CICOSY"
+                  android:textColor="#fc8c2c"
+                  android:textSize="@dimen/_10sdp"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:id="@+id/BusinessType"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="TECH\n"
+                  android:textColor="#fc8c2c"
+                  android:textSize="@dimen/_10sdp"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:id="@+id/StartDate"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="01/02/22"
+                  android:textColor="#fc8c2c"
+                  android:textSize="@dimen/_10sdp"
+                  android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/card1v3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+              <TextView
+                  android:id="@+id/shopNumber"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Shop Number"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/_10sdp" />
+
+              <TextView
+                  android:id="@+id/floorNumber"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/nametenant"
+                  android:text="Floor Area:\n"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/_10sdp" />
+
+              <TextView
+                  android:id="@+id/expiryDate"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Expiry Date"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/card1v4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+
+              <TextView
+                  android:id="@+id/ShopNumber"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="15"
+                  android:textColor="#fc8c2c"
+                  android:textSize="@dimen/_10sdp"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:id="@+id/FloorNumber"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="10th\n"
+                  android:textColor="#fc8c2c"
+                  android:textSize="@dimen/_10sdp"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:id="@+id/ExpiryDate"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="28/02/22"
+                  android:textColor="#fc8c2c"
+                  android:textSize="@dimen/_10sdp"
+                  android:textStyle="bold" />
+            </LinearLayout>
+          </LinearLayout>
+        </RelativeLayout>
+      </com.google.android.material.card.MaterialCardView>
+
+      <RelativeLayout
+          android:id="@+id/tenantMenu"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/card1"
+          android:layout_marginLeft="@dimen/_10sdp"
+          android:layout_marginRight="@dimen/_10sdp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/propertyInformation"
+            android:layout_width="@dimen/_96sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:alpha="0.9"
+            android:backgroundTint="@color/card_background"
+            android:fontFamily="@font/app_font"
+            android:onClick="tenantpropertyInformation"
+            android:shadowRadius="5"
+            android:text="Property\nInformation"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+            app:cornerRadius="@dimen/_13sdp"
+            app:icon="@drawable/property_information"
+            app:iconGravity="textTop"
+            app:iconSize="@dimen/_50sdp"
+            app:iconTint="#FFAB40"
+            app:rippleColor="#FFE0B2"
+            app:strokeColor="@color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rental"
+            android:layout_width="@dimen/_96sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.9"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/app_font"
+            android:shadowColor="#FFCC80"
+            android:shadowRadius="5"
+            android:text="Rental"
+            android:onClick="tenantRental"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+            app:cornerRadius="@dimen/_13sdp"
+            app:icon="@drawable/rental"
+            app:iconGravity="textTop"
+            app:iconSize="@dimen/_50sdp"
+            app:iconTint="#FFAB40"
+            app:rippleColor="#FFE0B2"
+            app:strokeColor="@color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mantainanceServices"
+            android:layout_width="@dimen/_96sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:alpha="0.9"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/app_font"
+            android:shadowColor="#FFCC80"
+            android:shadowRadius="5"
+            android:text="Mantainance\nServices"
+            android:onClick="tenantMaintenance"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+            app:cornerRadius="@dimen/_13sdp"
+            app:icon="@drawable/maintanance"
+            app:iconGravity="textTop"
+            app:iconSize="@dimen/_50sdp"
+            app:iconTint="#FFAB40"
+            app:rippleColor="#FFE0B2"
+            app:strokeColor="@color/black" />
+
+      </RelativeLayout>
+      <com.google.android.material.card.MaterialCardView
+          android:id="@+id/card2"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginBottom="15dp"
+          android:layout_below="@+id/tenantMenu"
+          android:alpha="0.9"
+          app:cardBackgroundColor="@color/card_background"
+          app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+          <LinearLayout
+              android:id="@+id/card2hori"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginBottom="20dp"
+              android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/card2v1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+              <TextView
+                  android:id="@+id/leaseAgreement"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Lease Agreement\nDate:"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/_10sdp"
+                  />
+
+              <TextView
+                  android:id="@+id/leaseExpirydate"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Expiry Date:"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/_10sdp"
+                  />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/card2v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+              <TextView
+                  android:id="@+id/Naenant"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="12/02/22\n"
+                  android:textSize="@dimen/_10sdp"
+                  android:textColor="#fc8c2c"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:id="@+id/leaseExpiryDate"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="12/03/22"
+                  android:textColor="#fc8c2c"
+                  android:textStyle="bold"
+                  android:textSize="@dimen/_10sdp"
+                  />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/card2v3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp">
+
+              <TextView
+                  android:id="@+id/leaseStartdate"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="lease Start:"
+                  android:textSize="@dimen/_10sdp"
+                  android:textColor="@color/black"
+                  />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/card2v4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp"
+                >
+
+              <TextView
+                  android:id="@+id/leaseStartDate"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="01/02/22"
+                  android:textColor="#fc8c2c"
+                  android:textStyle="bold"
+                  android:textSize="@dimen/_10sdp"
+                  />
+
+            </LinearLayout>
+          </LinearLayout>
+          <RelativeLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:id="@+id/buttons"
+              android:layout_below="@id/card2hori"
+              android:layout_centerInParent="true"
+              >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/renew"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="48dp"
+                android:background="#fc8c2c"
+                android:text="Renew Lease"
+                android:textSize="@dimen/_10sdp"
+
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/terminate"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="48dp"
+                android:layout_toRightOf="@id/renew"
+                android:layout_marginLeft="20dp"
+                android:background="#fc8c2c"
+                android:text="Terminate Lease"
+                android:textSize="@dimen/_10sdp"
+                />
+          </RelativeLayout>
+          <androidx.appcompat.widget.AppCompatButton
+
+              android:id="@+id/downloadlease"
+              android:layout_width="wrap_content"
+              android:layout_height="48dp"
+              android:layout_below="@id/buttons"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="10dp"
+              android:layout_marginBottom="20dp"
+              android:paddingLeft="@dimen/_5sdp"
+              android:paddingRight="@dimen/_5sdp"
+              android:background="#fc8c2c"
+              android:clickable="true"
+              android:text="Download lease"
+              android:textSize="@dimen/_10sdp" />
+
+
+
+        </RelativeLayout>
+      </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+
+  </androidx.core.widget.NestedScrollView>
+  <com.google.android.material.bottomnavigation.BottomNavigationView
+      android:id="@+id/navigation"
+      android:layout_alignParentBottom="true"
+      android:background="@drawable/ff"
+      app:itemRippleColor="@color/white"
+      app:itemIconTint="@color/black"
+      android:alpha="0.8"
+      app:itemTextColor="#424242"
+      app:labelVisibilityMode="selected"
+      app:menu="@menu/bottom_navigation_menu"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"/>
+</RelativeLayout>
+

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/x"
+    tools:context=".AboutApp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/first"
+            android:text="About"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:textStyle="bold"
+            android:textSize="@dimen/_22sdp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowRadius="5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:text="Joina City"
+            android:fontFamily="@font/app_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <View
+            android:id="@+id/view"
+            android:alpha="0.6"
+            android:layout_below="@+id/text1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_width="@dimen/_140sdp"
+            android:background="@color/white"
+            android:layout_height="@dimen/_3sdp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:alpha="0.4"
+            android:backgroundTint="#FFCC80"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_below="@id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/text1"
+                android:id="@+id/text1a"
+                android:justificationMode="inter_word"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/black"
+                android:shadowColor="@color/white"
+                android:shadowRadius="2"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Situated in the heart of the capital is a spectacular business, shopping and leisure modern high rise edifice that provides shoppers and visitors an authentic Hararian experience unlike anywhere else in this vibrant Sunshine city. Joina city offers a world class unique and enjoyable shopping experience for the discerning classy shopper, a proffessional plus comfortable office space  and a relaxed, exciting and lively environment where visitors can enter into a dimension of happiness and satisfaction"
+                android:fontFamily="@font/app_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_below="@id/card"
+            android:id="@+id/text2"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowRadius="3"
+            android:text="By CICOSY"
+            android:fontFamily="@font/app_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:id="@+id/view2"
+            android:alpha="0.6"
+            android:layout_below="@+id/text2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="@dimen/_95sdp"
+            android:background="@color/white"
+            android:layout_height="@dimen/_2sdp"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view2"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:alpha="0.6"
+            android:backgroundTint="#FFCC80"
+            android:fontFamily="@font/app_font"
+            android:shadowColor="@color/white"
+            android:shadowRadius="5"
+            android:text="CONTACT US"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>

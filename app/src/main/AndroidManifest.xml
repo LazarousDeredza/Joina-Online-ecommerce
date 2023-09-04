@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.joina.joinaonline">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/icon_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JoinACity"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Joinaonline.ShopSelection"
+            android:exported="false" />
+        <activity
+            android:name=".Joinaonline.ProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Joinaonline.ProductViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Joinaonline.OrderPayments.CheckoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Joinaonline.OrderPayments.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GetStartedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SmartParking.Admin.Reports.ReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SmartParking.Admin.ParkingLog.ParkinglogItemDescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SmartParking.Admin.ParkingLog.ParkingLogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SmartParking.SmartParkingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JoinaonlineAdmin.Vendors.AddVendorsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineTenants.Settings.ShopContent.TermsAndConditionsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineTenants.Settings.ShopContent.PrivacyPolicyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineTenants.Dashboard.Requests.RequestsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.OrderPayments.AddCardDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.OrderPayments.ProductCheckoutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.ListStoresActivities.OnlineAuctionListStoresActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.ListStoresActivities.GroceriesListStoresActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.ListStoresActivities.FoodAndDrinkListStoresActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.ListStoresActivities.FashionListStoresActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.ListStoresActivities.EventsAndBookingListStoresActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.ListStoresActivities.EntertainmentListStoresActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.ListStoresActivities.ElectronicsListStoresActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.OrderPayments.ShoppingCartActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.ListStoresActivities.BankingListStoresActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.OnClickSingleProductActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineTenants.Settings.Promotions.AddPromotionsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineTenants.Settings.Discount.AddDiscountActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineTenants.Settings.Discount.DiscountActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineTenants.Settings.Promotions.PromotionsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineTenants.Settings.TaxDetails.AddTaxActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineTenants.Settings.TaxDetails.TaxDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineAdmin.CategoryRequests.JoinaOnlineAdminAddSubcategoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineAdmin.CategoryRequests.JoinaOnlineAdminAddCategoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineAdmin.ShippingTimelineActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineAdmin.ShippingModesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineAdmin.DeliveryChargesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineAdmin.JoinaAdminDeliveryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineAdmin.JoinaAdminRatesManagementActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineAdmin.JoinaAdminProfileManagementActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineAdmin.JoinaAdminMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineAdmin.CategoryRequests.JoinaAdminCategoryRequestsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineTenants.Settings.ShippingAndDeliveryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineTenants.Settings.SellerAccountActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineTenants.Settings.ShopContent.ShopContentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineTenants.Settings.ShopProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineTenants.PaymentsOverview"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.StorefrontLayout"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.ListStoresActivities.MedicalListStoresActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineAdmin.ShowCategoriesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaOnlineNavActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Parking.tenant.TenantParkingHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.Medical.MedicalJOActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.Groceries.GroceriesJOActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.Fashion.FashionJOActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.Electronics.ElectronicsJOActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.Banking.BankingJOActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.FoodandDrink.FoodandDrinkJOActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.EventsAndBooking.EventsAndBookingJOActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.Entertainment.EntertainmentJOActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.OnlineAuction.OnlineAuctionJOActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Tenants.TenantAuthActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Tenants.GuestUser.TenantsGuestApplicationFormActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Tenants.GuestUser.TenantsGuestApplicationUploadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Tenants.PropertyManager.PropertyManagerDashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Tenants.PropertyManager.PropertyManagement.PropertyManagerPropertyManagementActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Tenants.PropertyManager.PropertyManagement.PropertyManagementAddCompartmentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Tenants.PropertyManager.PropertyManagement.PropertyManagementAddPropertyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Tenants.PropertyManager.PropertyManagerLeaseManagementActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Tenants.PropertyManager.PropertyManagerTenantManagementActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Tenants.PropertyManager.PropertyManagerMaintananceManagementActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Tenants.TenantInterface.TenantDashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Tenants.TenantInterface.TenantMaintenanceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Tenants.TenantInterface.TenantPropertyInformationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Tenants.TenantInterface.TenantRentalActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Systems.SystemsHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Parking.ParkingHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Offices.OfficesHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Joinaonline.JoinaOnlineHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Events.EventsHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Building.BuildingHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Adverts.AdvertsHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Amusement.AmusementHomeActivity"
+            android:exported="true" />
+        <activity android:name=".AboutApp" />
+        <activity
+            android:name=".JoinaonlineTenants.Dashboard.PaymentsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineTenants.Dashboard.Requests.BrandsRequestsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineTenants.Dashboard.Requests.CategoriesRequestsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineTenants.Dashboard.Requests.SubcategoriesRequestsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineTenants.JoinaTenantsMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinaonlineTenants.Products.AddProductActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

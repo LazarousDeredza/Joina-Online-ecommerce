@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/JoinaOnlineHomeFragment"
+        android:icon="@drawable/icon_homee"
+        android:iconTint="#FFAB40"
+        android:title="Home"/>
+
+<!--    <item-->
+<!--        android:id="@+id/shoppingCart"-->
+<!--        android:icon="@drawable/icon_shopping_cart"-->
+<!--        android:iconTint="#FFAB40"-->
+<!--        android:title="Cart"/>-->
+    <item
+        android:id="@+id/myOrderFragment"
+        android:icon="@drawable/payment_history"
+        android:iconTint="#FFAB40"
+        android:title="Orders"/>
+
+    <item
+        android:id="@+id/fragmentSettings"
+        android:icon="@drawable/icon_settings"
+        android:iconTint="#FFAB40"
+        android:title="Settings"/>
+</menu>

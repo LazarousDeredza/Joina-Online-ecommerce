@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/jotenants_navigation_graph"
+    app:startDestination="@id/DashboardFragment">
+    <fragment
+        android:id="@+id/DashboardFragment"
+        android:name="com.joina.joinaonline.JoinaonlineTenants.fragments.DashboardFragment"
+        android:label="DashboardFragment"
+        tools:layout="@layout/fragment_dashboard_joina_tenants" />
+    <fragment
+        android:id="@+id/ProductsFragment"
+        android:name="com.joina.joinaonline.JoinaonlineTenants.fragments.ProductsFragment"
+        android:label="ProductsFragment"
+        tools:layout="@layout/fragment_products_joina_tenants" />
+    <fragment
+        android:id="@+id/OrdersFragment"
+        android:name="com.joina.joinaonline.JoinaonlineTenants.fragments.OrdersFragment"
+        android:label="OrdersFragment"
+        tools:layout="@layout/fragment_orders_joina_tenants" />
+    <fragment
+        android:id="@+id/SettingsFragment"
+        android:name="com.joina.joinaonline.JoinaonlineTenants.fragments.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@layout/fragment_settings_joina_tenants" />
+</navigation>

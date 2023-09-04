@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginRight="@dimen/_20sdp"
+    android:layout_marginLeft="@dimen/_20sdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinaOnlineNavActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/users"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:text="Users"
+        app:cornerRadius="@dimen/_10sdp"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tenants"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/users"
+        android:text="Tenants"
+        app:cornerRadius="@dimen/_10sdp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/admin"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tenants"
+        android:text="Admin"
+        app:cornerRadius="@dimen/_10sdp" />
+
+</RelativeLayout>

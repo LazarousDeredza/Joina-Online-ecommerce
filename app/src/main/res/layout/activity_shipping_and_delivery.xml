@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinaonlineTenants.Settings.ShopContent.ShopContentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@color/primary"
+        app:title="Shipping and Delivery" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/shipping_timeline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@color/white"
+        android:elevation="0dp"
+        android:text="  Shipping Timeline"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        app:icon="@drawable/ic_timings"
+        app:iconSize="@dimen/_25sdp"
+        app:iconTint="@color/dark"
+        app:rippleColor="@color/ripple" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/delivery_charges"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_below="@+id/shipping_timeline"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@color/white"
+        android:elevation="0dp"
+        android:text="  Delivery Charges"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        app:icon="@drawable/payments"
+        app:iconSize="@dimen/_25sdp"
+        app:iconTint="@color/dark"
+        app:rippleColor="@color/ripple" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/shipping_modes"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_below="@+id/delivery_charges"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@color/white"
+        android:elevation="0dp"
+        android:text="  Shipping Modes"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        app:icon="@drawable/shipping_modes"
+        app:iconSize="@dimen/_25sdp"
+        app:iconTint="@color/dark"
+        app:rippleColor="@color/ripple" />
+
+
+
+</RelativeLayout>

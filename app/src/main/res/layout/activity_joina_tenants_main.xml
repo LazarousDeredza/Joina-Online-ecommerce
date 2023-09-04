@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinaonlineTenants.JoinaTenantsMainActivity">
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:navGraph="@navigation/jotenants_navigation_graph" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:itemRippleColor="@color/white"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="#424242"
+        app:labelVisibilityMode="selected"
+        app:menu="@menu/bottom_navigation_menu_tenants"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--FFCC80-->
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/dashboard_activity"-->
+<!--        android:text="Dashboard Activity"-->
+<!--        android:textSize="@dimen/_18sdp"-->
+<!--        android:layout_marginTop="@dimen/_15sdp"-->
+<!--        android:layout_marginRight="@dimen/_10sdp"-->
+<!--        android:clickable="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/main_settings"-->
+<!--        android:text="Main settings"-->
+<!--        android:textSize="@dimen/_18sdp"-->
+<!--        android:layout_marginTop="@dimen/_15sdp"-->
+<!--        android:layout_marginRight="@dimen/_10sdp"-->
+<!--        android:clickable="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/orders_activity"-->
+<!--        android:text="Orders activity"-->
+<!--        android:textSize="@dimen/_18sdp"-->
+<!--        android:layout_marginTop="@dimen/_15sdp"-->
+<!--        android:layout_marginRight="@dimen/_10sdp"-->
+<!--        android:clickable="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/payments_activity"-->
+<!--        android:text="Payments Activity"-->
+<!--        android:textSize="@dimen/_18sdp"-->
+<!--        android:layout_marginTop="@dimen/_15sdp"-->
+<!--        android:layout_marginRight="@dimen/_10sdp"-->
+<!--        android:clickable="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/payments_settings"-->
+<!--        android:text="Payments Settings"-->
+<!--        android:textSize="@dimen/_18sdp"-->
+<!--        android:layout_marginTop="@dimen/_15sdp"-->
+<!--        android:layout_marginRight="@dimen/_10sdp"-->
+<!--        android:clickable="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/payments_overview"-->
+<!--        android:text="Payments overview"-->
+<!--        android:textSize="@dimen/_18sdp"-->
+<!--        android:layout_marginTop="@dimen/_15sdp"-->
+<!--        android:layout_marginRight="@dimen/_10sdp"-->
+<!--        android:clickable="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/products_activity"-->
+<!--        android:text="Products Activity"-->
+<!--        android:textSize="@dimen/_18sdp"-->
+<!--        android:layout_marginTop="@dimen/_15sdp"-->
+<!--        android:layout_marginRight="@dimen/_10sdp"-->
+<!--        android:clickable="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/storefront_layout"-->
+<!--        android:text="Storefront Layout"-->
+<!--        android:textSize="@dimen/_18sdp"-->
+<!--        android:layout_marginTop="@dimen/_15sdp"-->
+<!--        android:layout_marginRight="@dimen/_10sdp"-->
+<!--        android:clickable="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/add_products"-->
+<!--        android:text="Add product"-->
+<!--        android:textSize="@dimen/_18sdp"-->
+<!--        android:layout_marginTop="@dimen/_15sdp"-->
+<!--        android:layout_marginRight="@dimen/_10sdp"-->
+<!--        android:clickable="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/add_collection"-->
+<!--        android:text="Add collection"-->
+<!--        android:textSize="@dimen/_18sdp"-->
+<!--        android:layout_marginTop="@dimen/_15sdp"-->
+<!--        android:layout_marginRight="@dimen/_10sdp"-->
+<!--        android:clickab le="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+<!--</LinearLayout>-->

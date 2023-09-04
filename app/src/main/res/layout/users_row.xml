@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/upperBand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grad_background"
+        >
+
+        <TextView
+            android:id="@+id/parkerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shawn T Kanyemba"
+            android:layout_marginStart="15dp"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/cardStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="active"
+            android:textStyle="italic"
+            android:textColor="@color/light_green"
+            android:textSize="@dimen/_7sdp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="30dp"
+            />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upperBand"
+        app:cardBackgroundColor="@color/card_background"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/lowerband"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/upperBand"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+            <TextView
+                android:id="@+id/userlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card :"
+                android:textStyle="normal"
+                android:textSize="@dimen/_9sdp"
+                />
+            <View
+                android:id="@+id/dividerV"
+                android:layout_width="1dp"
+                android:layout_height="45dp"
+                android:layout_toRightOf="@+id/mobileLabel"
+                android:layout_marginStart="5dp"
+                android:background="#0000"
+                />
+
+            <TextView
+                android:id="@+id/cardNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/dividerV"
+                android:text="C000000001"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9sdp" />
+            <TextView
+                android:id="@+id/mobileLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile :"
+                android:layout_below="@id/userlabel"
+
+                android:textSize="@dimen/_9sdp"
+                />
+            <TextView
+                android:id="@+id/parkerMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/dividerV"
+                android:text="Parker Mobile"
+                android:layout_below="@+id/cardNumber"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9sdp" />
+
+            <View
+                android:id="@+id/dividerV2"
+                android:layout_width="1dp"
+                android:layout_height="45dp"
+                android:layout_toRightOf="@+id/parkerMobile"
+                android:layout_marginStart="5dp"
+                android:layout_centerHorizontal="true"
+                android:background="#0000" />
+
+            <TextView
+                android:id="@+id/startDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Date:"
+                android:layout_toRightOf="@+id/dividerV2"
+                android:layout_marginStart="15dp"
+                android:textSize="@dimen/_9sdp"
+                />
+            <TextView
+                android:id="@+id/startDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/startDateLabel"
+                android:text="10:12 12/04/23"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9sdp" />
+            <TextView
+                android:id="@+id/expirationDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expiration:"
+                android:layout_toRightOf="@id/dividerV2"
+                android:layout_below="@id/startDate"
+                android:layout_marginStart="15dp"
+                android:textSize="@dimen/_9sdp"
+                />
+            <TextView
+                android:id="@+id/endDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/expirationDateLabel"
+                android:text="10:12 12/04/23"
+                android:layout_below="@+id/startDate"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9sdp" />
+
+            <ImageView
+                android:id="@+id/moreOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/action"
+                android:layout_alignParentRight="true"
+
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_margin="@dimen/_8sdp"-->
+        <!--                android:layout_marginStart="@dimen/_2sdp"-->
+        <!--                android:orientation="vertical">-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/parkerTimeIn"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginStart="@dimen/_5sdp"-->
+        <!--                    android:layout_marginBottom="@dimen/_4sdp"-->
+        <!--                    android:text="xx:xx"-->
+        <!--                    android:textSize="@dimen/_11sdp" />-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/parkerDateIn"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginBottom="@dimen/_4sdp"-->
+        <!--                    android:text="xx-xx-xx"-->
+        <!--                    android:textSize="@dimen/_11sdp"-->
+
+        <!--                    />-->
+
+        <!--            </LinearLayout>-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_margin="@dimen/_8sdp"-->
+        <!--                android:layout_marginStart="@dimen/_2sdp"-->
+        <!--                android:orientation="vertical">-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/parkerTimeOut"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginStart="@dimen/_5sdp"-->
+        <!--                    android:layout_marginBottom="@dimen/_4sdp"-->
+        <!--                    android:text="xx:xx"-->
+        <!--                    android:textSize="@dimen/_11sdp" />-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/parkerDateOut"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginBottom="@dimen/_4sdp"-->
+        <!--                    android:text="xx-xx-xx"-->
+        <!--                    android:textSize="@dimen/_11sdp" />-->
+
+        <!--            </LinearLayout>-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_margin="@dimen/_8sdp"-->
+        <!--                android:layout_marginStart="@dimen/_2sdp"-->
+        <!--                android:gravity="center_vertical"-->
+        <!--                android:orientation="vertical">-->
+
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/parkerDuration"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginBottom="@dimen/_4sdp"-->
+        <!--                    android:src="@drawable/action" />-->
+
+        <!--            </LinearLayout>-->
+
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_margin="@dimen/_8sdp"-->
+        <!--                android:orientation="vertical">-->
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/btnEdit"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:src="@drawable/ic_edit" />-->
+        <!--            </LinearLayout>-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_margin="@dimen/_8sdp"-->
+        <!--                android:orientation="vertical">-->
+
+
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/btnDelete"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginStart="@dimen/_8sdp"-->
+        <!--                    android:src="@drawable/ic_delete" />-->
+
+        <!--            </LinearLayout>-->
+        <!--        </RelativeLayout>-->
+
+    </androidx.cardview.widget.CardView>
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/primary"
+        android:layout_below="@+id/card"
+        />
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/black"
+        android:layout_below="@+id/divider1"
+        />
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/background"
+        android:layout_below="@+id/divider2"
+        />
+</RelativeLayout>

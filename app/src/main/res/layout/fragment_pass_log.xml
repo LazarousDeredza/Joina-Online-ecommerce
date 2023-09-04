@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SmartParking.Admin.Fragments.PassLogFragment">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_view_bg"
+        app:queryHint="Search here ........"
+        app:iconifiedByDefault="false"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="2dp"
+
+        />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchView"
+        android:text="Smart Parking Log"
+        android:textAlignment="center"
+        android:textSize="@dimen/_10sdp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardContents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txt2"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        app:cardPreventCornerOverlap="false">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grad_background"
+            >
+
+            <RelativeLayout
+                android:id="@+id/buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/guide"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="2dp"
+                    android:layout_height="4dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/tenants"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@id/guide"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:elevation="0dp"
+                    android:backgroundTint="@color/white"
+                    android:text="tenants"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/primary_text"
+                    app:cornerRadius="0dp"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/casuals"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toLeftOf="@id/guide"
+                    android:elevation="0dp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="Casuals"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/_9sdp"
+                    app:backgroundTint="@color/transparent"
+                    app:cornerRadius="0dp" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttons"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="visible"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttons"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

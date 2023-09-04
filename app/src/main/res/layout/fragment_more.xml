@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ee"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.joina.joinaonline.fragments.fragmentMore">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/app"
+            android:text="App"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_17sdp"
+            android:shadowColor="@color/black"
+            android:shadowRadius="3"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/app_font"
+            android:layout_marginTop="@dimen/_120sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rate"
+            app:icon="@drawable/icon_rate"
+            app:iconTint="#FFAB40"
+            android:text="rate app"
+            android:textColor="@color/black"
+            android:textAllCaps="true"
+            app:iconSize="@dimen/_30sdp"
+            android:alpha="0.7"
+            app:rippleColor="#FFE0B2"
+            android:backgroundTint="@color/white"
+            android:layout_below="@id/app"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/share"
+            app:icon="@drawable/icon_share"
+            app:iconTint="#FFAB40"
+            android:text="share app"
+            android:textColor="@color/black"
+            android:textAllCaps="true"
+            app:iconSize="@dimen/_30sdp"
+            android:alpha="0.7"
+            app:rippleColor="#FFE0B2"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:backgroundTint="@color/white"
+            android:layout_below="@id/rate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"/>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_below="@id/share"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="@dimen/_3sdp"/>
+
+        <TextView
+            android:id="@+id/help"
+            android:text="Help"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_17sdp"
+            android:shadowRadius="3"
+            android:shadowColor="@color/black"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/app_font"
+            android:layout_below="@id/view3"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/about"
+            app:icon="@drawable/icon_about"
+            app:iconTint="#FFAB40"
+            android:text="about"
+            android:textColor="@color/black"
+            android:textAllCaps="true"
+            app:iconSize="@dimen/_30sdp"
+            android:alpha="0.7"
+            app:rippleColor="#FFE0B2"
+            android:backgroundTint="@color/white"
+            android:layout_below="@id/help"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/privacy"
+            app:icon="@drawable/icon_policy"
+            app:iconTint="#FFAB40"
+            android:text="privacy policy"
+            android:textColor="@color/black"
+            android:textAllCaps="true"
+            app:iconSize="@dimen/_30sdp"
+            android:alpha="0.7"
+            app:rippleColor="#FFE0B2"
+            android:backgroundTint="@color/white"
+            android:layout_marginBottom="@dimen/_60sdp"
+            android:layout_below="@id/about"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"/>
+
+    </RelativeLayout>
+</ScrollView>

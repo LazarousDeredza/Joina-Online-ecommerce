@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinaonlineAdmin.ShippingTimelineActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@color/primary"
+        app:title="Shipping Timeline" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/toolbar"
+        android:id="@+id/min_days"
+        android:layout_height="wrap_content"
+        android:hint="10"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/_190sdp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/timeframe_spinner"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="@dimen/_190sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/min_days"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:text="Enter the min. no. of days/hours it takes to get the order ready and ship"
+        android:textSize="@dimen/_10sdp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/two"
+        android:id="@+id/max_days"
+        android:layout_height="wrap_content"
+        android:hint="20"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/_190sdp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/timeframe_spinner1"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_below="@id/two"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/three"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="Enter the min. no. of days/hours it takes to get the order ready and ship"
+        android:textSize="@dimen/_10sdp"
+        android:layout_below="@id/max_days"
+        android:layout_width="@dimen/_190sdp"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/btnSaveShippingTimeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/three"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:backgroundTint="@color/primary"
+        android:padding="@dimen/_12sdp"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

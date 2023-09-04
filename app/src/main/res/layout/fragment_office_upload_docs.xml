@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Joinaonline.Offices.OfficeUploadDocsFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/middleScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="50dp"
+            android:alpha="0.7"
+            app:cardBackgroundColor="@color/card_background"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/applicationTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/app_font"
+                    android:shadowColor="@color/black"
+                    android:text="Application"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/uploadTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/applicationTitle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/app_font"
+                    android:text="Upload Following Documents" />
+
+                <LinearLayout
+                    android:id="@+id/uploaddoc1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uploadTitle"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/upload" />
+
+                    <TextView
+                        android:id="@+id/cr14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/app_font"
+                        android:text="CR14 Form" />
+
+                    <TextView
+                        android:id="@+id/uploadcr14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="true"
+                        android:fontFamily="@font/app_font"
+                        android:text="upload"
+                        android:textColor="@color/purple_700" />
+
+                    <ImageView
+                        android:id="@+id/tv_path"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_path2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uploaddoc1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/uploaddoc2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_path2"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/upload" />
+
+                    <TextView
+                        android:id="@+id/cr6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/app_font"
+                        android:text="CR6 Form" />
+
+                    <TextView
+                        android:id="@+id/uploadcr6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="true"
+                        android:fontFamily="@font/app_font"
+                        android:text="upload"
+                        android:textColor="@color/purple_700" />
+
+                    <ImageView
+                        android:id="@+id/tv_path3i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_path3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uploaddoc2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/uploaddoc3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_path3"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/upload" />
+
+                    <TextView
+                        android:id="@+id/certInc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/app_font"
+                        android:text="Certificate of Incorporation" />
+
+                    <TextView
+                        android:id="@+id/uploadcertInc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/app_font"
+                        android:text="upload"
+                        android:textColor="@color/purple_700" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/uploaddoc4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uploaddoc3"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/upload" />
+
+                    <TextView
+                        android:id="@+id/directrIDs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/app_font"
+                        android:text="Photocopies of Director (min 2)" />
+
+                    <TextView
+                        android:id="@+id/uploaddirectrIDs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/app_font"
+                        android:text="upload"
+                        android:textColor="@color/purple_700" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/uploaddoc5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uploaddoc4"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/upload" />
+
+                    <TextView
+                        android:id="@+id/bankStatement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/app_font"
+                        android:text="3 months Bank Statements" />
+
+                    <TextView
+                        android:id="@+id/uploadBankStatements"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/app_font"
+                        android:text="upload"
+                        android:textColor="@color/purple_700" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/uploaddoc6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uploaddoc5"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/upload" />
+
+                    <TextView
+                        android:id="@+id/VAT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/app_font"
+                        android:text="VAT Registration Certificate" />
+
+                    <TextView
+                        android:id="@+id/uploadVAT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/app_font"
+                        android:text="upload"
+                        android:textColor="@color/purple_700" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/uploaddoc7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uploaddoc6"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/upload" />
+
+                    <TextView
+                        android:id="@+id/TAXclearance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/app_font"
+                        android:text="Tax Clearance Certificate(2022)" />
+
+                    <TextView
+                        android:id="@+id/uploadTAXcert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/app_font"
+                        android:text="upload"
+                        android:textColor="@color/purple_700" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/uploaddoc8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uploaddoc7"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/upload" />
+
+                    <TextView
+                        android:id="@+id/memorandumOfAssociation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/app_font"
+                        android:text="Memorandum of Association" />
+
+                    <TextView
+                        android:id="@+id/uploadMemoOfAsso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/app_font"
+                        android:text="upload"
+                        android:textColor="@color/purple_700" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/uploaddoc9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uploaddoc8"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/upload" />
+
+                    <TextView
+                        android:id="@+id/articlesOfAssociation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/app_font"
+                        android:text="Articles of Association" />
+
+                    <TextView
+                        android:id="@+id/uploadArticlesOfAsso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/app_font"
+                        android:text="upload"
+                        android:textColor="@color/purple_700" />
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/uploaddoc9"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#fc8c2c"
+                    android:text="Apply"
+                    android:onClick="apply"
+
+                    />
+
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
